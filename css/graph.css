@@ -1,0 +1,382 @@
+.investment-details {
+    display: flex;
+    align-items: center;
+    margin-bottom: 34px;
+}
+.back {
+    margin-right: 33px;
+}
+.main-heading {
+}
+.investment-portfel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.portfel-left {
+    height: 116px;
+    display: flex;
+    align-items: center;
+    filter: drop-shadow(0px 0px 66.3331px rgba(82, 82, 221, 0.21));
+    background: linear-gradient(104.85deg, #6565F7 -4.09%, #5252DD 101.53%);
+    padding-left: 22px;
+    border-top-left-radius: 26px;
+    border-bottom-left-radius: 26px;
+    padding-right: 90px;
+}
+.portfel-left-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 34px;
+}
+.portfel-left-image span{
+    text-transform: uppercase;
+    font-family: 'Roboto-Bold';
+    font-size: 15px;
+    color: #fff;
+    display: block;
+    margin-top: 2px;
+}
+.portfel-left-text {
+    display: flex;
+    flex-direction: column;
+    color: #FFF;
+}
+.portfel-left-text .prt-price{
+    font-size: 30px;
+    margin-bottom: 15px;
+    display: block;
+}
+.portfel-left-subtitle {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+.portfel-left-subtitle img{
+    margin-right: 10px;
+}
+.portfel-left-subtitle span{
+    font-family: 'Roboto-Regular';
+    font-size: 14px;
+}
+/* .portfel-right {
+    height: 116px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: drop-shadow(0px 0px 66.3331px rgba(0, 0, 0, 0.08));
+    background-color: #fff;
+    padding: 0 22px 0 40px;
+    border-radius: 26px;
+    position: relative;
+    right: 20px;
+} */
+/* .portfel-right-text {
+    font-family: 'Roboto-Bold';
+    font-size: 17px;
+    color: #5757E4;
+    margin-right: 32px;
+} */
+.counter {
+    display: flex;
+    align-items: center;
+    margin-right: 34px;
+    position: relative;
+}
+.counter-input{
+    width: 99px;
+    height: 42px;
+    outline: none;
+    padding-left: 36px;
+    font-family: 'Roboto-Bold';
+    font-size: 14px;
+    color: #4F4F4F;
+
+}
+.arrow.up{
+    top: 10px;
+    right: 18px;
+    cursor: pointer;
+}
+.arrow.down{
+    top: 22px;
+    right: 18px;
+    cursor: pointer;
+}
+.general-button.add-btn{
+    width: 157px;
+    height: 42px;
+    color: #fff;
+    border: none;
+
+}
+.block {
+}
+.circle-block {
+}
+.arrow {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.general-button {
+    outline: none;
+ 
+}
+.graph .status{
+    color: #5252DD;
+}
+.graph-block{
+    height: 320px;
+}
+.chart{
+    height: 100%;
+}
+.chart-wrapper{
+    padding: 39px 50px 25px 50px;
+}
+.counter span{
+    display: block;
+    margin-right: 30px;
+}
+.investment-portfel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.portfel-left {
+    height: 116px;
+    display: flex;
+    align-items: center;
+    filter: drop-shadow(0px 0px 66.3331px rgba(82, 82, 221, 0.21));
+    background: linear-gradient(104.85deg, #6565F7 -4.09%, #5252DD 101.53%);
+    padding-left: 22px;
+    border-top-left-radius: 26px;
+    border-bottom-left-radius: 26px;
+    padding-right: 90px;
+}
+.portfel-left-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 34px;
+}
+.portfel-left-image span{
+    text-transform: uppercase;
+    font-family: 'Roboto-Bold';
+    font-size: 15px;
+    color: #fff;
+    display: block;
+    margin-top: 2px;
+}
+.portfel-left-text {
+    display: flex;
+    flex-direction: column;
+    color: #FFF;
+}
+.portfel-left-text .prt-price{
+    font-size: 30px;
+    margin-bottom: 15px;
+    display: block;
+}
+.portfel-left-subtitle {
+    display: flex;
+    align-items: center;
+}
+.portfel-left-subtitle img{
+    margin-right: 10px;
+}
+.portfel-left-subtitle span{
+    font-family: 'Roboto-Regular';
+    font-size: 14px;
+}
+.portfel-right {
+    height: 116px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: drop-shadow(0px 0px 66.3331px rgba(0, 0, 0, 0.08));
+    background-color: #fff;
+    padding: 0 22px 0 40px;
+    border-radius: 26px;
+    position: relative;
+    right: 20px;
+}
+.portfel-right-text {
+    font-family: 'Roboto-Bold';
+    font-size: 17px;
+    color: #5757E4;
+    margin-right: 32px;
+}
+.referal-btn.general-button.blue-button{
+    outline: none;
+    border: none;
+}
+.ad-prt{
+    display: flex;
+    align-items: center;
+}
+.investment-details-heading{
+    font-size: 25px;
+}
+
+
+@media screen and (max-width: 1400px) {
+    .portfel-left-subtitle span{
+        display: block;
+    }
+    .portfel-left-subtitle{
+        display: block;
+        white-space: nowrap;
+    }
+    .portfel-right-text{
+        font-size: 14px;
+    }
+    
+}
+@media screen and (max-width:1200px) {
+    .referal-input.circle-block{
+        width: 300px;
+    }
+    .investment-portfel{
+        flex-direction: column;
+    }
+    .portfel-left,
+    .portfel-right{
+        width: 100%;
+        border-radius: 26px;
+        justify-content: center;
+        left: 0;
+    }
+    .portfel-right{
+        top: -10px;
+    }
+    .referal-income{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .referal-table-wrapper{
+        margin-bottom: 28px;
+    }
+    .prt-text{
+        display: flex;
+        align-items: center;
+    }
+    
+}
+@media screen and (max-width: 992px){
+    
+    .counter{
+        margin-right: 0;
+        
+    }
+    .portfel-right-text{
+        margin-bottom: 12px;
+    }
+    .counter span{
+        margin-left: 20px;
+    }
+}
+@media screen and (max-width: 768px){
+    .counter-input.circle-block{
+        width: 99px;
+    }
+    .add-btn span{
+       margin: 0;
+    }
+}
+@media screen and (max-width: 678px){
+    .prt-text{
+        flex-direction: column;
+        align-items: start;
+    }
+    .portfel-left{
+        padding-right: 0;
+    }
+    .chart-wrapper{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .chart{
+        width: 100%;
+    }
+    .currency{
+        width: 500px;
+    }
+}
+@media screen and (max-width: 576px){
+    .portfel-right{
+        flex-direction: column;
+    }
+    .portfel-left{
+        padding: 15px;
+    }
+}
+@media screen and (max-width: 476px){
+    .portfel-left-text .prt-price{
+        font-size: 24px;
+    }
+    .portfel-left-subtitle span{
+        font-size: 10px;    
+    }
+    .portfel-left-image{
+        margin-right: 15px;
+    }
+    .portfel-left-text .prt-price{
+        margin-bottom: 5px;
+    }
+    .u-content{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .counter span{
+        margin-left: 10px;
+        margin-right: 12px;
+    }
+    .chart-wrapper{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .investment-details-heading{
+        font-size: 20px;
+    }
+    .profile-heading, .main-heading{
+        text-align: center;
+    }
+    #graphic{
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 374px){
+    .portfel-left{
+        
+    }
+    .portfel-left-text .prt-price{
+        text-align: center;
+    }
+    .portfel-left-image{
+        margin-right: 0;
+    }
+    .portfel-right-text{
+        margin-right: 0;
+    }
+    .add-btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .add-btn img{
+        display: none;
+    }
+    .add-btn.general-button.blue-button{
+        width: 100px;
+    }
+    .portfel-right{
+        padding: 0;
+    }
+    .portfel-left-text .prt-price{
+        text-align: left;
+    }
+
+}

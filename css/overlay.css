@@ -1,0 +1,191 @@
+.overlay,
+.overlay-2,
+.overlay-3,
+.overlay-4,
+.overlay-5 {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: opacity .4s linear, visibility .4s linear;
+    z-index: 5;
+    visibility: hidden;
+    opacity: 0;
+}
+.active.overlay,
+.active.overlay-2,
+.active.overlay-3,
+.active.overlay-4,
+.active.overlay-5{
+    visibility: visible;
+    opacity: 1;
+}
+/* .overlay-3{
+    opacity: 1;
+    visibility: visible;
+} */
+/* .overlay-4{
+    visibility: visible;
+    opacity: 1;
+} */
+/* .overlay-5{
+    visibility: visible;
+    opacity: 1;
+} */
+.help {
+    width: 761px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 26px;
+    position: relative;
+
+}
+.modal-btn.orange-button{
+    width: 221px;
+    height: 42px;
+    background: #FC8A46;
+    color: #fff;
+    border: none;
+}
+.overlay-2 .help{
+    width: 720px;
+    height: 746px;
+    padding: 45px 0 25px 0;
+}
+.overlay-3 .help{
+    width: 760px;
+    padding: 43px 74px;
+}
+.overlay-4 .help{
+    padding: 56px 74px 43px 74px;
+}
+.overlay-5 .help{
+    width: auto;
+    padding: 48px 75px 40px 75px;
+}
+.overlay .help{
+    padding: 63px 74px 45px 74px;
+}
+.help-img {
+    margin-bottom: 17px;
+}
+.help-subtitle {
+    text-align: center;
+    font-size: 14.5104px;
+    line-height: 170.1%;
+    font-family: 'Roboto-Bold';
+    color: #B8B8B8;
+    margin-bottom: 26px;
+}
+.modal-btn{
+    width: 221px;
+    height: 42px;
+}
+.close{
+    width: 13px;
+    height: 13px;
+    position: absolute;
+    top: 14px;
+    right: 19px;
+    border: none;
+    outline: none;
+    /* background-color: transparent; */
+    background: url('../images/Referal/close.svg');
+}
+.person-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.person-img img{
+    margin-bottom: 7px;
+}
+.modal-persone-name{
+    font-size: 34px;
+    font-family: 'Roboto-Bold';
+    color: #5252DD;
+}
+/* .main-heading{
+    text-align: center;
+} */
+.overlay-2 .main-heading{
+    font-size: 38px;
+    line-height: 111.6%;
+    margin-bottom: 36px;
+}
+.overlay-2-table{
+    /* height: 290px; */
+    width: 100%;
+}
+.overlay-2-table .referal-table{
+    height: 290px;
+}
+
+.overlay-2-table .referal-table .heading-row .history-row-info{
+    width: 720px;
+}
+.modal-blue-btn.general-button.blue-button{
+    width: 221px;
+}
+.overlay-2-table .referal-table .history-row-info{
+    font-size: 14px;
+}
+.overlay-2{
+    overflow-y: scroll;
+}
+@media screen and (max-width: 992px) {
+
+    .overlay{
+        padding: 40px;
+    }
+   .referal-table{
+       width: 1000px;
+   }
+ 
+    
+}
+@media screen and (max-width: 768px) {
+    .overlay-2 .help{
+        width: 100%;
+    }
+    .overlay-2{
+        padding: 10px;
+    }
+    .overlay-2 .main-heading{
+        font-size: 22px;
+    }
+    .overlay-2 .modal-persone-name{
+        font-size: 22px;
+    }
+    .referal-table{
+        width: 992px;
+    }
+    
+}
+@media screen and (max-width: 678px) {
+
+    .overlay{
+        padding: 30px 10px;
+    }
+    .overlay .help{
+        padding: 25px 39px 40px 39px;
+    }
+    .overlay .help .help-img img{
+        width: 98px;
+        height: 98px;
+    }
+    .overlay .help .help-title{
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    .overlay .help .help-subtitle{
+        font-size: 9px;
+    }
+}

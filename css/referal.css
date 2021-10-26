@@ -1,0 +1,503 @@
+
+.referal-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.referal-title img{
+    margin-left: 18px;
+}
+.referal-title .main-heading {
+    margin-bottom: 0;
+}
+.referal-input-block {
+    position: relative;
+}
+.referal-input-block::before{
+    width: 22px;
+    height: 22px;
+    display: block; 
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    content: "";
+    background: url('../images/Referal/bi_link.svg');
+}
+.circle-block {
+}
+.referal-input.circle-block {
+    width: 558px;
+    height: 42px;
+    padding-left: 37px;
+    outline: none;
+    font-family: 'Roboto-Bold';
+    font-size: 14px;
+    color: #4F4F4F;
+    margin-right: 18px;
+}
+.referal-btn.general-button.blue-button {
+    width: 166px;
+    height: 44px;
+}
+.personal-header {
+}
+.referal-tab {
+    display: flex;
+    align-items: center;
+ 
+}
+
+.referal-tab-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    border-bottom: 2px solid #F7F7F7;
+}
+.personal-tab {
+}
+.active {
+}
+.reffered {
+    display: flex;
+    align-items: center;
+}
+.reffered span:first-child{
+    font-family: 'Roboto-Bold';
+    font-size: 14px;
+    color: #5757E4;
+}
+.amount{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    background-color: #5A5AE8;
+    color: #fff;
+    margin-left: 8px;
+}
+.referal-t strong,
+.portfel-left-subtitle strong{
+    font-size: 21px;
+    
+}
+.reffered-people {
+}
+.reffered-people img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+.percent-ref-btn,
+.percent-ref-btn.general-button.blue-button,
+.percent-ref-btn.general-button.red-button{
+    width: 210px;
+    height: 29px;
+    padding: 7px 9px 8px 14px;
+    margin: 0 auto;
+    outline: none;
+    border: none;
+    font-size: 14px;
+    white-space: nowrap;
+}
+.referal-persone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.referal-persone-image {
+}
+.referal-persone span{
+    display: block;
+    margin-left: 16px;
+}
+.referal-table{
+    margin-bottom: 36px;
+}
+
+.yellow-button {
+    background-color: #F8BE1F;
+}
+.referal-meney-text.big {
+    font-size: 38px;
+    font-family: 'Roboto-Bold';
+    color: #5757E3;
+    display: block;
+    margin-right: 37px;
+}
+.referal-money-btn.general-button {
+    width: 125px;
+    height: 42px;
+    border: 1px solid #5252DD;
+    color: #5757E3;
+    background-color: #fff;
+    margin-right: 28px;
+}
+.reinvest-btn {
+    width: 177px;
+    height: 42px;
+}
+.orange-btn {
+
+    background: #FC8A46;
+    color: #fff;
+    border: none;
+}
+/* Tab */
+.referal-tab-content{
+    padding: 20px 50px 64px 50px;
+}
+.main-people{
+    width: 100%;
+    height: 86px;
+    border-radius: 26px;
+    background: #5757E4;
+    padding-left: 7px;
+    display: flex;
+    align-items: center;
+}
+.main-people-detail{
+    display: flex;
+    align-items: center;
+}
+.main-people-detail-image img{
+    border: 1px solid #fff;
+    border-radius: 100%;
+}
+.main-people-name{
+    font-family: 'Roboto-Bold';
+    font-size: 14px;
+    color: #fff;
+    display: block;
+    margin-left: 25px;
+}
+.people-block{
+    margin-bottom: 21px;
+}
+.level-score{
+    width: 73px;
+    height: 86px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #5757E4;
+    border-radius: 25.9114px;
+    font-family: 'Roboto-Bold';
+    font-size: 27px;
+    color: #fff;
+    position: relative;
+    z-index: 2;
+}
+.level{
+    display: flex;
+    align-items: center;
+}
+.level-text{
+    width: 184px;
+    height: 86px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 66.3331px rgba(0, 0, 0, 0.08);
+    background-color: #fff;
+    border-radius: 25.9114px;
+    position: relative;
+    z-index: 1;
+    left: -40px;
+    color: #5757E4;
+}
+.other-people{
+    display: flex;
+    align-items: center;
+}
+.ref-people{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ref-people-name{
+    font-family: 'Roboto-Bold';
+    font-size: 12px;
+    display: block;
+    margin-top: 2px;
+}
+.ref-people:not(:first-child){
+    margin-left: 35px;
+}
+.ref-people img{
+    width: 43px;
+    height: 43px;
+}
+.other-people-detail{
+    display: flex;
+    align-items: center;
+}
+
+.rf-tab-cnt{
+    display: none;
+}
+.active.rf-tab-cnt{
+    display: block;
+}
+.other-people-detail .scroll-content{
+    display: flex;
+}
+.investment-portfel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.portfel-left {
+    height: 116px;
+    display: flex;
+    align-items: center;
+    filter: drop-shadow(0px 0px 66.3331px rgba(82, 82, 221, 0.21));
+    background: linear-gradient(104.85deg, #6565F7 -4.09%, #5252DD 101.53%);
+    padding-left: 22px;
+    border-top-left-radius: 26px;
+    border-bottom-left-radius: 26px;
+    padding-right: 90px;
+}
+.portfel-left-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 34px;
+}
+.portfel-left-image span{
+    text-transform: uppercase;
+    font-family: 'Roboto-Bold';
+    font-size: 15px;
+    color: #fff;
+    display: block;
+    margin-top: 2px;
+}
+.portfel-left-text {
+    display: flex;
+    flex-direction: column;
+    color: #FFF;
+}
+.portfel-left-text .prt-price{
+    font-size: 30px;
+    margin-bottom: 15px;
+    display: block;
+}
+.portfel-left-subtitle {
+    display: flex;
+    align-items: center;
+}
+.portfel-left-subtitle img{
+    margin-right: 10px;
+}
+.portfel-left-subtitle span{
+    font-family: 'Roboto-Regular';
+    font-size: 14px;
+}
+.portfel-right {
+    height: 116px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: drop-shadow(0px 0px 66.3331px rgba(0, 0, 0, 0.08));
+    background-color: #fff;
+    padding: 0 22px 0 40px;
+    border-radius: 26px;
+    position: relative;
+    right: 20px;
+}
+.portfel-right-text {
+    font-family: 'Roboto-Bold';
+    font-size: 17px;
+    color: #5757E4;
+    margin-right: 32px;
+}
+.referal-btn.general-button.blue-button{
+    outline: none;
+    border: none;
+}
+.ref-info{
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 1400px) {
+    .referal-t strong, .portfel-left-subtitle strong{
+        font-size: 16px;
+    }
+
+    .referal-input.circle-block{
+        width: 400px;
+    }
+    
+}
+
+@media screen and (max-width: 1200px){
+
+    .referal-input.circle-block{
+        width: 300px;
+    }
+    .investment-portfel{
+        flex-direction: column;
+    }
+    .portfel-left,
+    .portfel-right{
+        width: 100%;
+        border-radius: 26px;
+        justify-content: center;
+        left: 0;
+    }
+    .portfel-right{
+        top: -10px;
+    }
+    .referal-income{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .referal-table-wrapper{
+        margin-bottom: 28px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+
+    .referal-table{
+        overflow: hidden;
+    }
+    .u-container{
+        overflow: hidden;
+    }
+
+    .referal-meney-text.big{
+        font-size: 26px;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .portfel-left{
+        justify-content: center;
+        
+    }
+    .portfel-right
+    {   
+        height: auto;
+        padding: 25px 0 17px 0;
+        flex-direction: column;
+    }
+    .referal-input.circle-block{
+        margin-right: 0;
+    }
+    .referal-money-btn.general-button,
+    .referal-meney-text.big{
+        margin-right: 0;
+    }
+    .referal-meney-text.big{
+        margin-bottom: 20px;
+    }
+    .referal-money-btn.general-button{
+        margin-bottom: 20px;
+    }
+    .referal-btn.general-button.blue-button{
+        margin-top: 13px;
+    }
+    .ref-container{
+        width: 100%;
+        left: 0;
+    }
+    .personal-header{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .referal-tab-header{
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+    .referal-tab{
+        order: 2;
+    }
+    .referal-title{
+        justify-content: center;
+    }
+
+    .reffered-people img{
+        width: 576px;
+    }
+}
+@media screen and (max-width: 678px){
+    .referal-tab-content{
+        padding-left: 20px;
+        padding-right: 0;
+    }
+    .main-people{
+       
+        border-radius: 26px 0 0 26px;
+    }
+    .other-people{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .level{
+        width: 100%;
+        
+    }
+    .level-text{
+        height: 42px;
+        border-radius: 10px;
+        width: calc(100% + 40px);
+        justify-content: flex-start;
+        padding-left: 50px;
+        
+    }
+    .other-people-detail{
+        width: 90%;
+        display: flex;
+        align-items: center;
+        padding-top: 17px;
+    }
+    .level-score{
+        width: 58px;
+        height: 42px;
+        border-radius: 10px;
+        font-size: 21px;
+    }
+}
+@media screen and (max-width: 476px){
+    .referal-title .main-heading{
+        font-size: 21px;
+    }
+    .referal-t strong, .portfel-left-subtitle strong{
+        font-size: 17px;
+    }
+    .portfel-left{
+        padding-right: 16px;
+    }
+    .portfel-left-image img{
+        width: 55px;
+        height: 55px;
+    }
+    .referal-income{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media screen and (max-width: 374px) {
+    .u-content{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .referal-tab-content{
+        padding: 5px;
+    }
+    
+}
+
+   

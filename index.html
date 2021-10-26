@@ -1,0 +1,685 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css//bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/fixed-style.css">
+    <link rel="stylesheet" href="css/admin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="css/style.min.css" />
+    <title>Реферальная программа</title>
+</head>
+
+<body>
+
+    <div class="admin-wrapper">
+        <header class="header">
+            <div class="header__container">
+                <div class="container-fluid">
+                    <div class="header-body">
+                        <div class="header-navigation">
+                            <a href="/admin.html" class="logo__link">
+                                <img src="./images/custom/logo.png" alt="logo" class="logo__img">
+                                <p class="logo__text">Admin</p>
+                            </a>
+                            <button class="header-filter__btn">
+                                <img src="./images/custom/Filter.svg" alt="Filter">
+                            </button>
+                            <ul class="header-menu">
+                                <li class="header-menu__list header-menu__notif">
+                                    <a href="#" class="header-menu__link mail-link">
+                                        <span>2</span>
+                                        <img src="./images/custom/Message.png" alt="Message">
+                                    </a>
+                                    <div class="header-notifi">
+                                        <div class="header-notifi__inner">
+                                            <div class="header-notifi__top">
+                                                <div class="header-notifi__top_title">Уведомления</div>
+                                                <a href="#" class="header-notifi__read">Отметить все как прочитанные</a>
+                                            </div>
+                                            <ul class="header-notifi__content">
+                                                <li class="header-notifi__list">
+                                                    <div class="header-notifi__blog">
+                                                        <div class="header-notifi__title">Title of the post</div>
+                                                        <div class="header-notifi__text">
+                                                            Lorem ipsum dolor sit amet,
+                                                            consectetur adipiscing elit. Quisque convallis neque sit
+                                                            amet mattis
+                                                        </div>
+                                                    </div>
+                                                    <div class="header-notifi__mess">
+                                                        <div class="header-notifi__time">42m</div>
+                                                        <label class="header-notifi__container">
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                                <li class="header-notifi__list">
+                                                    <div class="header-notifi__blog">
+                                                        <div class="header-notifi__title">Title of the post</div>
+                                                        <div class="header-notifi__text">
+                                                            Lorem ipsum dolor sit amet,
+                                                            consectetur adipiscing elit. Quisque convallis neque sit
+                                                            amet mattis
+                                                        </div>
+                                                    </div>
+                                                    <div class="header-notifi__mess">
+                                                        <div class="header-notifi__time">42m</div>
+                                                        <label class="header-notifi__container">
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                                <li class="header-notifi__list">
+                                                    <div class="header-notifi__blog">
+                                                        <div class="header-notifi__title">Title of the post</div>
+                                                        <div class="header-notifi__text">
+                                                            Lorem ipsum dolor sit amet,
+                                                            consectetur adipiscing elit. Quisque convallis neque sit
+                                                            amet mattis
+                                                        </div>
+                                                    </div>
+                                                    <div class="header-notifi__mess">
+                                                        <div class="header-notifi__time">42m</div>
+                                                        <label class="header-notifi__container">
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <span class="header-notifi__arrow"></span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="header-menu__list mobile-hidden">
+                                    <a href="#" class="header-menu__link admin-link">
+                                        <span><img src="./images/custom/asdmin-img.png" alt="admin"></span>
+                                        <p class="header-menu__text">admin</p>
+                                    </a>
+                                </li>
+                                <li class="header-menu__list mobile-hidden">
+                                    <a href="#" class="header-menu__link">
+                                        <img src="./images/custom/2 User.png" alt="2 User">
+                                    </a>
+                                </li>
+                                <li class="header-menu__list mobile-hidden">
+                                    <a href="#" class="header-menu__link">
+                                        <img src="./images/custom/Logout.png" alt="Logout">
+                                    </a>
+                                </li>
+                                <li class="burger">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Left Panel -->
+        <div class="panel">
+            <a href="/admin.html" class="logo__link">
+                <img src="./images/custom/logo.png" alt="logo" class="logo__img">
+                <p class="logo__text">Admin</p>
+            </a>
+            <a href="#" class="admin__link">
+                <div class="admin__img">
+                    <span></span>
+                    <img src="./images/custom/asdmin-img.png" alt="admin-img">
+                </div>
+                <div class="admin__wrapper">
+                    <p class="admin__text">admin</p>
+                    <div class="admin__online">
+                        <span></span>
+                        <p>В сети</p>
+                    </div>
+                </div>
+            </a>
+            <ul class="panel-menu">
+                <li class="panel-menu__list">
+                    <a href="#" class="panel-menu__link link-active">
+                        <img src="./images/custom/Category.svg" alt="Category">
+                        <p>Главная</p>
+                    </a>
+                </li>
+                <li class="panel-menu__list">
+                    <a href="#" class="panel-menu__link">
+                        <img src="./images/custom/3 User.svg" alt="3 User">
+                        <p>Пользователи</p>
+                    </a>
+                </li>
+                <li class="panel-menu__list">
+                    <a href="#" class="panel-menu__link">
+                        <img src="./images/custom/Wallet.svg" alt="Wallet">
+                        <p>Список криптовалют</p>
+                    </a>
+                </li>
+                <li class="panel-menu__list">
+                    <a href="#" class="panel-menu__link">
+                        <img src="./images/custom/Document.svg" alt="Document">
+                        <p>Новости</p>
+                    </a>
+                </li>
+                <li class="panel-menu__list">
+                    <a href="#" class="panel-menu__link">
+                        <img src="./images/custom/Graph.svg" alt="Graph">
+                        <p>Запрос на вывод</p>
+                    </a>
+                </li>
+                <li class="panel-menu__list">
+                    <a href="#" class="panel-menu__link">
+                        <img src="./images/custom/Work.svg" alt="Work">
+                        <p>Инвестиции</p>
+                    </a>
+                </li>
+                <li class="panel-menu__list">
+                    <a href="#" class="panel-menu__link panel-settings">
+                        <img src="./images/custom/Setting.svg" alt="Setting">
+                        <p>Настройки</p>
+                        <img class="panel-menu__arrow" src="./images/custom/Arrow - Down 2.png" alt="Arrow - Down">
+                    </a>
+                    <ul class="panel-settings__menu">
+                        <li class="panel-settings__list">
+                            <a href="#" class="panel-settings__link">
+                                <img class="panel-settings__img" src="./images/custom/Arrow - Right Circle.png"
+                                    alt="Right Circle">
+                                Цены binance.com
+                            </a>
+                        </li>
+                        <li class="panel-settings__list">
+                            <a href="#" class="panel-settings__link">
+                                <img class="panel-settings__img" src="./images/custom/Arrow - Right Circle.png"
+                                    alt="Right Circle">
+                                Баланс
+                            </a>
+                        </li>
+                        <li class="panel-settings__list">
+                            <a href="#" class="panel-settings__link">
+                                <img class="panel-settings__img" src="./images/custom/Arrow - Right Circle.png"
+                                    alt="Right Circle">
+                                Параметры
+                            </a>
+                        </li>
+                        <li class="panel-settings__list">
+                            <a href="#" class="panel-settings__link panel-invest">
+                                <img class="panel-settings__img" src="./images/custom/Arrow - Right Circle.png"
+                                    alt="Right Circle">
+                                Инвестиции
+                            </a>
+                            <ul class="panel-invest__menu">
+                                <li class="panel-invest__list">
+                                    <a href="#" class="panel-invest__link">
+                                        <img class="panel-invest__img" src="./images/custom/Arrow - Right 3.png" alt="">
+                                        Сроки
+                                    </a>
+                                </li>
+                                <li class="panel-invest__list">
+                                    <a href="#" class="panel-invest__link">
+                                        <img class="panel-invest__img" src="./images/custom/Arrow - Right 3.png" alt="">
+                                        Лог
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="panel-menu__list panel-noti">
+                    <a class="panel-menu__link panel-noti__btn" href="#">
+                        <img src="./images/custom/Message.png" alt="Message">
+                        <p>Уведомления</p>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+
+
+        <div class="personal">
+            <h2 class="admin__h2">Главная</h2>
+            <div class="admin__h3">
+                <h3 class="h3__active">Панель управления</h3>
+            </div>
+            <div class="scroll-content">
+                <div class="tarif-choose-1-outer tarif-choose-1-outer1 tarif-choose-1-outer-margin">
+                    <div class="tarif-choose-track">
+                        <label class="tarif-choosen-item-wrap tarif__2">
+                            <input type="radio" name="tarif">
+                            <div class="tarif-choosen-item tarif__in">
+                                <div class="tarif-choosen-item-img">
+                                    <img src="./images/Admin/portfolio.svg" alt="#">
+                                </div>
+                                <div class="tarif-choosen-text">
+                                    <strong>7</strong>
+                                    <span>Портфель клиентов</span>
+                                </div>
+                            </div>
+                        </label>
+                        <label class="tarif-choosen-item-wrap tarif__2">
+                            <input type="radio" name="tarif">
+                            <div class="tarif-choosen-item tarif__in">
+                                <div class="tarif-choosen-item-img">
+                                    <img src="./images/Admin/cryptocurrency.svg" alt="#">
+                                </div>
+                                <div class="tarif-choosen-text">
+                                    <strong>2</strong>
+                                    <span>Активных <br> криптовалют</span>
+                                </div>
+                            </div>
+                        </label>
+                        <label class="tarif-choosen-item-wrap tarif__2">
+                            <input type="radio" name="tarif">
+                            <div class="tarif-choosen-item tarif__in">
+                                <div class="tarif-choosen-item-img">
+                                    <img src="./images/Admin/team.svg" alt="#">
+                                </div>
+                                <div class="tarif-choosen-text">
+                                    <strong>24</strong>
+                                    <span>Регистрации <br> пользователей</span>
+                                </div>
+                            </div>
+                        </label>
+                        <label class="tarif-choosen-item-wrap tarif__2">
+                            <input type="radio" name="tarif">
+                            <div class="tarif-choosen-item tarif__in">
+                                <div class="tarif-choosen-item-img">
+                                    <img src="./images/Admin/pie-chart.svg" alt="#">
+                                </div>
+                                <div class="tarif-choosen-text">
+                                    <span class="tarif-num"><strong>8424.7621376</strong></span>
+                                    <span>Всего вывели (USDT)</span>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="tarif-slider">
+                        <label class="tarif-choosen-item-wrap tarif__2">
+                            <input type="radio" name="tarif">
+                            <div class="tarif-choosen-item tarif__in">
+                                <div class="tarif-choosen-item-img">
+                                    <img src="./images/Admin/portfolio.svg" alt="#">
+                                </div>
+                                <div class="tarif-choosen-text">
+                                    <strong>7</strong>
+                                    <span>Портфель клиентов</span>
+                                </div>
+                            </div>
+                        </label>
+                        <label class="tarif-choosen-item-wrap tarif__2">
+                            <input type="radio" name="tarif">
+                            <div class="tarif-choosen-item tarif__in">
+                                <div class="tarif-choosen-item-img">
+                                    <img src="./images/Admin/cryptocurrency.svg" alt="#">
+                                </div>
+                                <div class="tarif-choosen-text">
+                                    <strong>2</strong>
+                                    <span>Активных <br> криптовалют</span>
+                                </div>
+                            </div>
+                        </label>
+                        <label class="tarif-choosen-item-wrap tarif__2">
+                            <input type="radio" name="tarif">
+                            <div class="tarif-choosen-item tarif__in">
+                                <div class="tarif-choosen-item-img">
+                                    <img src="./images/Admin/team.svg" alt="#">
+                                </div>
+                                <div class="tarif-choosen-text">
+                                    <strong>24</strong>
+                                    <span>Регистрации <br> пользователей</span>
+                                </div>
+                            </div>
+                        </label>
+                        <label class="tarif-choosen-item-wrap tarif__2">
+                            <input type="radio" name="tarif">
+                            <div class="tarif-choosen-item tarif__in">
+                                <div class="tarif-choosen-item-img">
+                                    <img src="./images/Admin/pie-chart.svg" alt="#">
+                                </div>
+                                <div class="tarif-choosen-text">
+                                    <span class="tarif-num"><strong>8424.7621376</strong></span>
+                                    <span>Всего вывели (USDT)</span>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6 admin__data">
+                    <h2 class="admin__h2">График</h2>
+                    <div class="admin__h3">
+                        <h3 onclick="h3active(this)">График2</h3>
+                        <h3 onclick="h3active(this)" class="h3__active">Панель управления</h3>
+                    </div>
+                    <div class="data__graph">
+                        <p class="small__text graph__text">Соотношение пополнения и вывода в USDT (По текущему курсу)
+                        </p>
+                        <div class="graph">
+                            <img src="images/Admin/ellipse_small.svg" alt="">
+                            <img src="images/Admin/ellipse.svg" alt="">
+                            <img src="images/Admin/circle.svg" alt="">
+                            <img src="images/Admin/ellipse_inner.svg" alt="">
+                        </div>
+                        <div class="graph_data">
+                            <div class="d-flex">
+                                <div class="green"></div>
+                                <p>Пополнено</p>
+                            </div>
+                            <div class="d-flex">
+                                <div class="oringe"></div>
+                                <p>Пополнено</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 admin__data data_2">
+                    <h2 class="admin__h2">График</h2>
+                    <div class="admin__h3">
+                        <h3 onclick="h3active(this)">График2</h3>
+                        <h3 onclick="h3active(this)" class="h3__active">Панель управления</h3>
+                    </div>
+                    <img class="img-6" src="images/Admin/investing.png" alt="">
+                    <div class="currency-table one" data-scrollbar="true" tabindex="-1"
+                        style="overflow: hidden; outline: none;">
+                        <div class="scroll__right">
+                            <table class="currency currency1">
+                                <tbody>
+                                    <tr class="heading-row">
+                                        <th class="tb-heading">#</th>
+                                        <th class="tb-heading">Название</th>
+                                        <th class="tb-heading">Цена (USD)</th>
+                                        <th class="tb-heading">Рыночн. кап.</th>
+                                        <th class="tb-heading">Изм. (24ч)</th>
+                                    </tr>
+
+                                    <tr class="history-row">
+                                        <td class="history-row-info">
+                                            <div class="money-type">
+                                                <span>1</span>
+                                            </div>
+                                        </td>
+                                        <td class="history-row-info">
+                                            <img src="images/Admin/bitcoin.svg" alt="">
+                                            <span class="sum">Биткоин</span>
+                                        </td>
+                                        <td class="history-row-info">
+                                            <span class="status">31.498,6</span>
+                                        </td>
+                                        <td class="history-row-info">
+                                            <div class="time-block">
+                                                <span class="time-text">591,86В $</span>
+                                            </div>
+                                        </td>
+                                        <td class="history-row-info">
+                                            <div class="time-block">
+                                                <span class="time-text"> - 0,39%</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="history-row">
+                                        <td class="history-row-info">
+                                            <div class="money-type">
+                                                <span>2</span>
+                                            </div>
+                                        </td>
+                                        <td class="history-row-info">
+                                            <img src="images/Admin/ethereum.svg" alt="">
+                                            <span class="sum">Биткоин</span>
+                                        </td>
+                                        <td class="history-row-info">
+                                            <span class="status">31.498,6</span>
+                                        </td>
+                                        <td class="history-row-info">
+                                            <div class="time-block">
+                                                <span class="time-text">591,86В $</span>
+                                            </div>
+                                        </td>
+                                        <td class="history-row-info">
+                                            <div class="time-block">
+                                                <span class="time-text"> - 0,39%</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="history-row">
+                                        <td class="history-row-info">
+                                            <div class="money-type">
+                                                <span>3</span>
+                                            </div>
+                                        </td>
+                                        <td class="history-row-info">
+                                            <img src="images/Admin/bitcoin.svg" alt="">
+                                            <span class="sum">Биткоин</span>
+                                        </td>
+                                        <td class="history-row-info">
+                                            <span class="status">31.498,6</span>
+                                        </td>
+                                        <td class="history-row-info">
+                                            <div class="time-block">
+                                                <span class="time-text">591,86В $</span>
+                                            </div>
+                                        </td>
+                                        <td class="history-row-info">
+                                            <div class="time-block">
+                                                <span class="time-text"> - 0,39%</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="history-row">
+                                        <td class="history-row-info">
+                                            <div class="money-type">
+                                                <span>4</span>
+                                            </div>
+                                        </td>
+                                        <td class="history-row-info">
+                                            <img src="images/Admin/ethereum.svg" alt="">
+                                            <span class="sum">Биткоин</span>
+                                        </td>
+                                        <td class="history-row-info">
+                                            <span class="status">31.498,6</span>
+                                        </td>
+                                        <td class="history-row-info">
+                                            <div class="time-block">
+                                                <span class="time-text">591,86В $</span>
+                                            </div>
+                                        </td>
+                                        <td class="history-row-info">
+                                            <div class="time-block">
+                                                <span class="time-text"> - 0,39%</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="history-row">
+                                        <td class="history-row-info">
+                                            <div class="money-type">
+                                                <span>5</span>
+                                            </div>
+                                        </td>
+                                        <td class="history-row-info">
+                                            <img src="images/Admin/bitcoin.svg" alt="">
+                                            <span class="sum">Биткоин</span>
+                                        </td>
+                                        <td class="history-row-info">
+                                            <span class="status">31.498,6</span>
+                                        </td>
+                                        <td class="history-row-info">
+                                            <div class="time-block">
+                                                <span class="time-text">591,86В $</span>
+                                            </div>
+                                        </td>
+                                        <td class="history-row-info">
+                                            <div class="time-block">
+                                                <span class="time-text"> - 0,39%</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="history-row">
+                                        <td class="history-row-info">
+                                            <div class="money-type">
+                                                <span>6</span>
+                                            </div>
+                                        </td>
+                                        <td class="history-row-info">
+                                            <img src="images/Admin/ethereum.svg" alt="">
+                                            <span class="sum">Биткоин</span>
+                                        </td>
+                                        <td class="history-row-info">
+                                            <span class="status">31.498,6</span>
+                                        </td>
+                                        <td class="history-row-info">
+                                            <div class="time-block">
+                                                <span class="time-text">591,86В $</span>
+                                            </div>
+                                        </td>
+                                        <td class="history-row-info">
+                                            <div class="time-block">
+                                                <span class="time-text"> - 0,39%</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="history-row">
+                                        <td class="history-row-info">
+                                            <div class="money-type">
+                                                <span>7</span>
+                                            </div>
+                                        </td>
+                                        <td class="history-row-info">
+                                            <img src="images/Admin/bitcoin.svg" alt="">
+                                            <span class="sum">Биткоин</span>
+                                        </td>
+                                        <td class="history-row-info">
+                                            <span class="status">31.498,6</span>
+                                        </td>
+                                        <td class="history-row-info">
+                                            <div class="time-block">
+                                                <span class="time-text">591,86В $</span>
+                                            </div>
+                                        </td>
+                                        <td class="history-row-info">
+                                            <div class="time-block">
+                                                <span class="time-text"> - 0,39%</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="history-row">
+                                        <td class="history-row-info">
+                                            <div class="money-type">
+                                                <span>8</span>
+                                            </div>
+                                        </td>
+                                        <td class="history-row-info">
+                                            <img src="images/Admin/ethereum.svg" alt="">
+                                            <span class="sum">Биткоин</span>
+                                        </td>
+                                        <td class="history-row-info">
+                                            <span class="status">31.498,6</span>
+                                        </td>
+                                        <td class="history-row-info">
+                                            <div class="time-block">
+                                                <span class="time-text">591,86В $</span>
+                                            </div>
+                                        </td>
+                                        <td class="history-row-info">
+                                            <div class="time-block">
+                                                <span class="time-text"> - 0,39%</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="history-row">
+                                        <td class="history-row-info">
+                                            <div class="money-type">
+                                                <span>9</span>
+                                            </div>
+                                        </td>
+                                        <td class="history-row-info">
+                                            <img src="images/Admin/bitcoin.svg" alt="">
+                                            <span class="sum">Биткоин</span>
+                                        </td>
+                                        <td class="history-row-info">
+                                            <span class="status">31.498,6</span>
+                                        </td>
+                                        <td class="history-row-info">
+                                            <div class="time-block">
+                                                <span class="time-text">591,86В $</span>
+                                            </div>
+                                        </td>
+                                        <td class="history-row-info">
+                                            <div class="time-block">
+                                                <span class="time-text"> - 0,39%</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="history-row">
+                                        <td class="history-row-info">
+                                            <div class="money-type">
+                                                <span>10</span>
+                                            </div>
+                                        </td>
+                                        <td class="history-row-info">
+                                            <img src="images/Admin/ethereum.svg" alt="">
+                                            <span class="sum">Биткоин</span>
+                                        </td>
+                                        <td class="history-row-info">
+                                            <span class="status">31.498,6</span>
+                                        </td>
+                                        <td class="history-row-info">
+                                            <div class="time-block">
+                                                <span class="time-text">591,86В $</span>
+                                            </div>
+                                        </td>
+                                        <td class="history-row-info">
+                                            <div class="time-block">
+                                                <span class="time-text"> - 0,39%</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="scrollbar-track scrollbar-track-x" style="display: block;">
+                            <div class="scrollbar-thumb scrollbar-thumb-x"
+                                style="width: 1150.26px; transform: translate3d(0px, 0px, 0px);"></div>
+                        </div>
+                        <div class="scrollbar-track scrollbar-track-y" style="display: none;">
+                            <div class="scrollbar-thumb scrollbar-thumb-y"
+                                style="height: 809px; transform: translate3d(0px, 0px, 0px);"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <footer class="footer">
+            <div class="container-fluid">
+                <div class="footer__container">
+                    <a href="#" class="footer-left">
+                        © SpaceInvest 2021 Все права защищены
+                    </a>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <script src="./js/jQuery.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script src="./Libs/Smooth-scroll/smooth-scrollbar.js"></script>
+    <script src="./Libs/DynamicAdapt/script.js"></script>
+    <script src="./js/slick.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

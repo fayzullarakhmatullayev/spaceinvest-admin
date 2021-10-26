@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+}
+.scrollbar-track-x{
+    opacity: 1;
+    background-color: #f1f1f1;
+}
+.scroll-content{
+    padding-bottom: 16px;
+    /* background-color: #fff; */
+    box-shadow: none;
+}
+.scrollbar-thumb-x{
+    background-color: #E0E0E0;
+}
+.scrollbar-track-y{
+    opacity: 0;
+    display: none;
+}
+.scrollbar-thumb-y{
+    display: none;
+}
+@media screen and (max-width: 767px){
+    .scroll-content{
+        padding-bottom: 17px;
+    }
+}
