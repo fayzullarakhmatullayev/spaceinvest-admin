@@ -3730,6 +3730,10 @@ body {
     right: 0;
     left: unset;
     transition: all 0.4s;
+    background-image: url('../images/custom/header-bg.png') !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    background-size: cover !important;
 }
 
 .header.header-active {
@@ -3752,6 +3756,33 @@ body {
     width: 100%;
     top: 0;
     transition: all 0.4s;
+
+    &.panel-mobile {
+        .admin__img {
+            margin-right: 0;
+        }
+
+        .panel-settings {
+            &__menu {
+                background: #0F0B52;
+                z-index: 66;
+                padding: 15px;
+                width: 200px;
+                position: absolute;
+                border-radius: 20px;
+                margin-top: 0;
+
+                @include _767-block {
+                    margin-left: 52px;
+                    position: static;
+                    background: transparent;
+                    width: auto;
+                    padding: 0;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
 
     &-settings {
         &__menu {
@@ -3782,8 +3813,6 @@ body {
     }
 
     &-invest {
-
-
         &__menu {
             display: none;
             padding-left: 20px;
@@ -3811,6 +3840,16 @@ body {
             transform: rotate(90deg);
         }
     }
+}
+
+.tarif-choosen-item {
+    @include _575-block {
+        padding: 10px;
+    }
+}
+
+.admin__data {
+    padding-left: 16px;
 }
 
 .personal {
@@ -4025,8 +4064,8 @@ body {
 
 /* Style the checkmark/indicator */
 .header-notifi__container .checkmark:after {
-    left: 5px;
-    top: 0px;
+    left: 4px;
+    top: 1px;
     width: 5px;
     height: 8px;
     border: solid #5273E2;
@@ -4071,6 +4110,10 @@ body {
 
     .slick-list {
         margin-left: -45px;
+
+        @include _767-block {
+            margin-left: -15px;
+        }
     }
 
     .slick-slide {

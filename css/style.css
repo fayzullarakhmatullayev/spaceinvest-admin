@@ -3147,6 +3147,10 @@ body {
   -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
   transition: all 0.4s;
+  background-image: url("../images/custom/header-bg.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  background-size: cover !important;
 }
 
 .header.header-active {
@@ -3178,6 +3182,20 @@ body {
   -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
   transition: all 0.4s;
+}
+
+.panel.panel-mobile .admin__img {
+  margin-right: 0;
+}
+
+.panel.panel-mobile .panel-settings__menu {
+  background: #0F0B52;
+  z-index: 66;
+  padding: 15px;
+  width: 200px;
+  position: absolute;
+  border-radius: 20px;
+  margin-top: 0;
 }
 
 .panel-settings__menu {
@@ -3243,6 +3261,10 @@ body {
   -webkit-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
+}
+
+.admin__data {
+  padding-left: 16px;
 }
 
 .personal {
@@ -3476,8 +3498,8 @@ body {
 /* Style the checkmark/indicator */
 
 .header-notifi__container .checkmark:after {
-  left: 5px;
-  top: 0px;
+  left: 4px;
+  top: 1px;
   width: 5px;
   height: 8px;
   border: solid #5273E2;
@@ -4266,6 +4288,15 @@ body {
 }
 
 @media (max-width: 767.98px) {
+  .panel.panel-mobile .panel-settings__menu {
+    margin-left: 52px;
+    position: static;
+    background: transparent;
+    width: auto;
+    padding: 0;
+    margin-top: 10px;
+  }
+
   .header-notifi {
     width: 300px;
   }
@@ -4275,6 +4306,10 @@ body {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+  }
+
+  .tarif-slider .slick-list {
+    margin-left: -15px;
   }
 
   .burger {
@@ -4338,6 +4373,10 @@ body {
 }
 
 @media (max-width: 575.98px) {
+  .tarif-choosen-item {
+    padding: 10px;
+  }
+
   .panel-open .panel-noti__btn {
     max-width: 100%;
   }
