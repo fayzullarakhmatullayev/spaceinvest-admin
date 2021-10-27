@@ -357,13 +357,18 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-12 col-md-6 admin__data">
+                <div class="col-12 col-xl-6 admin__data">
                     <h2 class="admin__h2">График</h2>
                     <div class="admin__h3">
-                        <h3 onclick="h3active(this)">График2</h3>
-                        <h3 onclick="h3active(this)" class="h3__active">Панель управления</h3>
+                        <a href="#graf1" class="graph-link h3__active">График1</a>
+                        <a href="#table1" class="graph-link">Панель управления</a>
                     </div>
-                    <div class="data__graph">
+
+                    <div class="data__graph graph__active" id="graf1">
+                        <div id="customChart1"></div>
+                    </div>
+
+                    <div class="data__graph" id="table1">
                         <p class="small__text graph__text">Соотношение пополнения и вывода в USDT (По текущему курсу)
                         </p>
                         <div class="graph">
@@ -383,277 +388,283 @@
                             </div>
                         </div>
                     </div>
+
                 </div>
-                <div class="col-12 col-md-6 admin__data data_2">
+                <div class="col-12 col-xl-6 admin__data data_2">
                     <h2 class="admin__h2">График</h2>
                     <div class="admin__h3">
-                        <h3 onclick="h3active(this)">График2</h3>
-                        <h3 onclick="h3active(this)" class="h3__active">Панель управления</h3>
+                        <a href="#graf2" class="table-link table__active">График2</a>
+                        <a href="#table2" class="table-link">Панель управления</a>
                     </div>
-                    <img class="img-6" src="images/Admin/investing.png" alt="">
-                    <div class="currency-table one" data-scrollbar="true" tabindex="-1"
-                        style="overflow: hidden; outline: none;">
-                        <div class="scroll__right">
-                            <table class="currency currency1">
-                                <tbody>
-                                    <tr class="heading-row">
-                                        <th class="tb-heading">#</th>
-                                        <th class="tb-heading">Название</th>
-                                        <th class="tb-heading">Цена (USD)</th>
-                                        <th class="tb-heading">Рыночн. кап.</th>
-                                        <th class="tb-heading">Изм. (24ч)</th>
-                                    </tr>
+                    <div class="data__graph graph__active2" id="graf2">
+                        <div id="customChart2"></div>
+                    </div>
+                    <div class="data__graph" id="table2">
+                        <img class="img-6" src="images/Admin/investing.png" alt="">
+                        <div class="currency-table one" data-scrollbar="true" tabindex="-1"
+                            style="overflow: hidden; outline: none;">
+                            <div class="scroll__right">
+                                <table class="currency currency1">
+                                    <tbody>
+                                        <tr class="heading-row">
+                                            <th class="tb-heading">#</th>
+                                            <th class="tb-heading">Название</th>
+                                            <th class="tb-heading">Цена (USD)</th>
+                                            <th class="tb-heading">Рыночн. кап.</th>
+                                            <th class="tb-heading">Изм. (24ч)</th>
+                                        </tr>
 
-                                    <tr class="history-row">
-                                        <td class="history-row-info">
-                                            <div class="money-type">
-                                                <span>1</span>
-                                            </div>
-                                        </td>
-                                        <td class="history-row-info">
-                                            <img src="images/Admin/bitcoin.svg" alt="">
-                                            <span class="sum">Биткоин</span>
-                                        </td>
-                                        <td class="history-row-info">
-                                            <span class="status">31.498,6</span>
-                                        </td>
-                                        <td class="history-row-info">
-                                            <div class="time-block">
-                                                <span class="time-text">591,86В $</span>
-                                            </div>
-                                        </td>
-                                        <td class="history-row-info">
-                                            <div class="time-block">
-                                                <span class="time-text"> - 0,39%</span>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr class="history-row">
-                                        <td class="history-row-info">
-                                            <div class="money-type">
-                                                <span>2</span>
-                                            </div>
-                                        </td>
-                                        <td class="history-row-info">
-                                            <img src="images/Admin/ethereum.svg" alt="">
-                                            <span class="sum">Биткоин</span>
-                                        </td>
-                                        <td class="history-row-info">
-                                            <span class="status">31.498,6</span>
-                                        </td>
-                                        <td class="history-row-info">
-                                            <div class="time-block">
-                                                <span class="time-text">591,86В $</span>
-                                            </div>
-                                        </td>
-                                        <td class="history-row-info">
-                                            <div class="time-block">
-                                                <span class="time-text"> - 0,39%</span>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr class="history-row">
-                                        <td class="history-row-info">
-                                            <div class="money-type">
-                                                <span>3</span>
-                                            </div>
-                                        </td>
-                                        <td class="history-row-info">
-                                            <img src="images/Admin/bitcoin.svg" alt="">
-                                            <span class="sum">Биткоин</span>
-                                        </td>
-                                        <td class="history-row-info">
-                                            <span class="status">31.498,6</span>
-                                        </td>
-                                        <td class="history-row-info">
-                                            <div class="time-block">
-                                                <span class="time-text">591,86В $</span>
-                                            </div>
-                                        </td>
-                                        <td class="history-row-info">
-                                            <div class="time-block">
-                                                <span class="time-text"> - 0,39%</span>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr class="history-row">
-                                        <td class="history-row-info">
-                                            <div class="money-type">
-                                                <span>4</span>
-                                            </div>
-                                        </td>
-                                        <td class="history-row-info">
-                                            <img src="images/Admin/ethereum.svg" alt="">
-                                            <span class="sum">Биткоин</span>
-                                        </td>
-                                        <td class="history-row-info">
-                                            <span class="status">31.498,6</span>
-                                        </td>
-                                        <td class="history-row-info">
-                                            <div class="time-block">
-                                                <span class="time-text">591,86В $</span>
-                                            </div>
-                                        </td>
-                                        <td class="history-row-info">
-                                            <div class="time-block">
-                                                <span class="time-text"> - 0,39%</span>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr class="history-row">
-                                        <td class="history-row-info">
-                                            <div class="money-type">
-                                                <span>5</span>
-                                            </div>
-                                        </td>
-                                        <td class="history-row-info">
-                                            <img src="images/Admin/bitcoin.svg" alt="">
-                                            <span class="sum">Биткоин</span>
-                                        </td>
-                                        <td class="history-row-info">
-                                            <span class="status">31.498,6</span>
-                                        </td>
-                                        <td class="history-row-info">
-                                            <div class="time-block">
-                                                <span class="time-text">591,86В $</span>
-                                            </div>
-                                        </td>
-                                        <td class="history-row-info">
-                                            <div class="time-block">
-                                                <span class="time-text"> - 0,39%</span>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr class="history-row">
-                                        <td class="history-row-info">
-                                            <div class="money-type">
-                                                <span>6</span>
-                                            </div>
-                                        </td>
-                                        <td class="history-row-info">
-                                            <img src="images/Admin/ethereum.svg" alt="">
-                                            <span class="sum">Биткоин</span>
-                                        </td>
-                                        <td class="history-row-info">
-                                            <span class="status">31.498,6</span>
-                                        </td>
-                                        <td class="history-row-info">
-                                            <div class="time-block">
-                                                <span class="time-text">591,86В $</span>
-                                            </div>
-                                        </td>
-                                        <td class="history-row-info">
-                                            <div class="time-block">
-                                                <span class="time-text"> - 0,39%</span>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr class="history-row">
-                                        <td class="history-row-info">
-                                            <div class="money-type">
-                                                <span>7</span>
-                                            </div>
-                                        </td>
-                                        <td class="history-row-info">
-                                            <img src="images/Admin/bitcoin.svg" alt="">
-                                            <span class="sum">Биткоин</span>
-                                        </td>
-                                        <td class="history-row-info">
-                                            <span class="status">31.498,6</span>
-                                        </td>
-                                        <td class="history-row-info">
-                                            <div class="time-block">
-                                                <span class="time-text">591,86В $</span>
-                                            </div>
-                                        </td>
-                                        <td class="history-row-info">
-                                            <div class="time-block">
-                                                <span class="time-text"> - 0,39%</span>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr class="history-row">
-                                        <td class="history-row-info">
-                                            <div class="money-type">
-                                                <span>8</span>
-                                            </div>
-                                        </td>
-                                        <td class="history-row-info">
-                                            <img src="images/Admin/ethereum.svg" alt="">
-                                            <span class="sum">Биткоин</span>
-                                        </td>
-                                        <td class="history-row-info">
-                                            <span class="status">31.498,6</span>
-                                        </td>
-                                        <td class="history-row-info">
-                                            <div class="time-block">
-                                                <span class="time-text">591,86В $</span>
-                                            </div>
-                                        </td>
-                                        <td class="history-row-info">
-                                            <div class="time-block">
-                                                <span class="time-text"> - 0,39%</span>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr class="history-row">
-                                        <td class="history-row-info">
-                                            <div class="money-type">
-                                                <span>9</span>
-                                            </div>
-                                        </td>
-                                        <td class="history-row-info">
-                                            <img src="images/Admin/bitcoin.svg" alt="">
-                                            <span class="sum">Биткоин</span>
-                                        </td>
-                                        <td class="history-row-info">
-                                            <span class="status">31.498,6</span>
-                                        </td>
-                                        <td class="history-row-info">
-                                            <div class="time-block">
-                                                <span class="time-text">591,86В $</span>
-                                            </div>
-                                        </td>
-                                        <td class="history-row-info">
-                                            <div class="time-block">
-                                                <span class="time-text"> - 0,39%</span>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr class="history-row">
-                                        <td class="history-row-info">
-                                            <div class="money-type">
-                                                <span>10</span>
-                                            </div>
-                                        </td>
-                                        <td class="history-row-info">
-                                            <img src="images/Admin/ethereum.svg" alt="">
-                                            <span class="sum">Биткоин</span>
-                                        </td>
-                                        <td class="history-row-info">
-                                            <span class="status">31.498,6</span>
-                                        </td>
-                                        <td class="history-row-info">
-                                            <div class="time-block">
-                                                <span class="time-text">591,86В $</span>
-                                            </div>
-                                        </td>
-                                        <td class="history-row-info">
-                                            <div class="time-block">
-                                                <span class="time-text"> - 0,39%</span>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="scrollbar-track scrollbar-track-x" style="display: block;">
-                            <div class="scrollbar-thumb scrollbar-thumb-x"
-                                style="width: 1150.26px; transform: translate3d(0px, 0px, 0px);"></div>
-                        </div>
-                        <div class="scrollbar-track scrollbar-track-y" style="display: none;">
-                            <div class="scrollbar-thumb scrollbar-thumb-y"
-                                style="height: 809px; transform: translate3d(0px, 0px, 0px);"></div>
+                                        <tr class="history-row">
+                                            <td class="history-row-info">
+                                                <div class="money-type">
+                                                    <span>1</span>
+                                                </div>
+                                            </td>
+                                            <td class="history-row-info">
+                                                <img src="images/Admin/bitcoin.svg" alt="">
+                                                <span class="sum">Биткоин</span>
+                                            </td>
+                                            <td class="history-row-info">
+                                                <span class="status">31.498,6</span>
+                                            </td>
+                                            <td class="history-row-info">
+                                                <div class="time-block">
+                                                    <span class="time-text">591,86В $</span>
+                                                </div>
+                                            </td>
+                                            <td class="history-row-info">
+                                                <div class="time-block">
+                                                    <span class="time-text"> - 0,39%</span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="history-row">
+                                            <td class="history-row-info">
+                                                <div class="money-type">
+                                                    <span>2</span>
+                                                </div>
+                                            </td>
+                                            <td class="history-row-info">
+                                                <img src="images/Admin/ethereum.svg" alt="">
+                                                <span class="sum">Биткоин</span>
+                                            </td>
+                                            <td class="history-row-info">
+                                                <span class="status">31.498,6</span>
+                                            </td>
+                                            <td class="history-row-info">
+                                                <div class="time-block">
+                                                    <span class="time-text">591,86В $</span>
+                                                </div>
+                                            </td>
+                                            <td class="history-row-info">
+                                                <div class="time-block">
+                                                    <span class="time-text"> - 0,39%</span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="history-row">
+                                            <td class="history-row-info">
+                                                <div class="money-type">
+                                                    <span>3</span>
+                                                </div>
+                                            </td>
+                                            <td class="history-row-info">
+                                                <img src="images/Admin/bitcoin.svg" alt="">
+                                                <span class="sum">Биткоин</span>
+                                            </td>
+                                            <td class="history-row-info">
+                                                <span class="status">31.498,6</span>
+                                            </td>
+                                            <td class="history-row-info">
+                                                <div class="time-block">
+                                                    <span class="time-text">591,86В $</span>
+                                                </div>
+                                            </td>
+                                            <td class="history-row-info">
+                                                <div class="time-block">
+                                                    <span class="time-text"> - 0,39%</span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="history-row">
+                                            <td class="history-row-info">
+                                                <div class="money-type">
+                                                    <span>4</span>
+                                                </div>
+                                            </td>
+                                            <td class="history-row-info">
+                                                <img src="images/Admin/ethereum.svg" alt="">
+                                                <span class="sum">Биткоин</span>
+                                            </td>
+                                            <td class="history-row-info">
+                                                <span class="status">31.498,6</span>
+                                            </td>
+                                            <td class="history-row-info">
+                                                <div class="time-block">
+                                                    <span class="time-text">591,86В $</span>
+                                                </div>
+                                            </td>
+                                            <td class="history-row-info">
+                                                <div class="time-block">
+                                                    <span class="time-text"> - 0,39%</span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="history-row">
+                                            <td class="history-row-info">
+                                                <div class="money-type">
+                                                    <span>5</span>
+                                                </div>
+                                            </td>
+                                            <td class="history-row-info">
+                                                <img src="images/Admin/bitcoin.svg" alt="">
+                                                <span class="sum">Биткоин</span>
+                                            </td>
+                                            <td class="history-row-info">
+                                                <span class="status">31.498,6</span>
+                                            </td>
+                                            <td class="history-row-info">
+                                                <div class="time-block">
+                                                    <span class="time-text">591,86В $</span>
+                                                </div>
+                                            </td>
+                                            <td class="history-row-info">
+                                                <div class="time-block">
+                                                    <span class="time-text"> - 0,39%</span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="history-row">
+                                            <td class="history-row-info">
+                                                <div class="money-type">
+                                                    <span>6</span>
+                                                </div>
+                                            </td>
+                                            <td class="history-row-info">
+                                                <img src="images/Admin/ethereum.svg" alt="">
+                                                <span class="sum">Биткоин</span>
+                                            </td>
+                                            <td class="history-row-info">
+                                                <span class="status">31.498,6</span>
+                                            </td>
+                                            <td class="history-row-info">
+                                                <div class="time-block">
+                                                    <span class="time-text">591,86В $</span>
+                                                </div>
+                                            </td>
+                                            <td class="history-row-info">
+                                                <div class="time-block">
+                                                    <span class="time-text"> - 0,39%</span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="history-row">
+                                            <td class="history-row-info">
+                                                <div class="money-type">
+                                                    <span>7</span>
+                                                </div>
+                                            </td>
+                                            <td class="history-row-info">
+                                                <img src="images/Admin/bitcoin.svg" alt="">
+                                                <span class="sum">Биткоин</span>
+                                            </td>
+                                            <td class="history-row-info">
+                                                <span class="status">31.498,6</span>
+                                            </td>
+                                            <td class="history-row-info">
+                                                <div class="time-block">
+                                                    <span class="time-text">591,86В $</span>
+                                                </div>
+                                            </td>
+                                            <td class="history-row-info">
+                                                <div class="time-block">
+                                                    <span class="time-text"> - 0,39%</span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="history-row">
+                                            <td class="history-row-info">
+                                                <div class="money-type">
+                                                    <span>8</span>
+                                                </div>
+                                            </td>
+                                            <td class="history-row-info">
+                                                <img src="images/Admin/ethereum.svg" alt="">
+                                                <span class="sum">Биткоин</span>
+                                            </td>
+                                            <td class="history-row-info">
+                                                <span class="status">31.498,6</span>
+                                            </td>
+                                            <td class="history-row-info">
+                                                <div class="time-block">
+                                                    <span class="time-text">591,86В $</span>
+                                                </div>
+                                            </td>
+                                            <td class="history-row-info">
+                                                <div class="time-block">
+                                                    <span class="time-text"> - 0,39%</span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="history-row">
+                                            <td class="history-row-info">
+                                                <div class="money-type">
+                                                    <span>9</span>
+                                                </div>
+                                            </td>
+                                            <td class="history-row-info">
+                                                <img src="images/Admin/bitcoin.svg" alt="">
+                                                <span class="sum">Биткоин</span>
+                                            </td>
+                                            <td class="history-row-info">
+                                                <span class="status">31.498,6</span>
+                                            </td>
+                                            <td class="history-row-info">
+                                                <div class="time-block">
+                                                    <span class="time-text">591,86В $</span>
+                                                </div>
+                                            </td>
+                                            <td class="history-row-info">
+                                                <div class="time-block">
+                                                    <span class="time-text"> - 0,39%</span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="history-row">
+                                            <td class="history-row-info">
+                                                <div class="money-type">
+                                                    <span>10</span>
+                                                </div>
+                                            </td>
+                                            <td class="history-row-info">
+                                                <img src="images/Admin/ethereum.svg" alt="">
+                                                <span class="sum">Биткоин</span>
+                                            </td>
+                                            <td class="history-row-info">
+                                                <span class="status">31.498,6</span>
+                                            </td>
+                                            <td class="history-row-info">
+                                                <div class="time-block">
+                                                    <span class="time-text">591,86В $</span>
+                                                </div>
+                                            </td>
+                                            <td class="history-row-info">
+                                                <div class="time-block">
+                                                    <span class="time-text"> - 0,39%</span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="scrollbar-track scrollbar-track-x" style="display: block;">
+                                <div class="scrollbar-thumb scrollbar-thumb-x"
+                                    style="width: 1150.26px; transform: translate3d(0px, 0px, 0px);"></div>
+                            </div>
+                            <div class="scrollbar-track scrollbar-track-y" style="display: none;">
+                                <div class="scrollbar-thumb scrollbar-thumb-y"
+                                    style="height: 809px; transform: translate3d(0px, 0px, 0px);"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -674,6 +685,8 @@
 
     <script src="./js/jquery.js"></script>
     <script src="./js/slider.js"></script>
+    <script src="./js/apexcharts.js"></script>
+    <script src="./js/chart.js"></script>
     <script src="./js/owl.carousel.min.js"></script>
     <script src="./Libs/Smooth-scroll/smooth-scrollbar.js"></script>
     <script src="./Libs/DynamicAdapt/script.js"></script>

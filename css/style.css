@@ -3680,6 +3680,33 @@ body {
   display: none;
 }
 
+.data__graph {
+  display: none;
+}
+
+.data__graph.graph__active {
+  display: block;
+}
+
+.data__graph.graph__active2 {
+  display: block;
+}
+
+.table-link,
+.graph-link {
+  display: inline-block;
+  color: #B8B8B8;
+  margin-right: 20px;
+  font-family: a-m;
+}
+
+.table__active {
+  color: #5252DD !important;
+  border-bottom: 3px solid #5252DD;
+  text-align: left;
+  width: auto;
+}
+
 @media (max-width: 1765px) {
   .category.sign-category {
     margin-bottom: -86px !important;

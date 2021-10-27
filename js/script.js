@@ -71,6 +71,29 @@ $(document).ready(function () {
         $(this).toggleClass('burger-active');
         $('.panel').toggleClass('panel-open');
     })
+
+    $('.graph-link').click(function (e) {
+        e.preventDefault();
+        $('.graph__active').removeClass('graph__active')
+
+        $('.graph-link').removeClass('h3__active')
+        $(this).addClass('h3__active')
+
+        var href = $(this).attr('href');
+        $(href).addClass('graph__active');
+    })
+
+    $('.table-link').click(function (e) {
+        e.preventDefault();
+        $('.graph__active2').removeClass('graph__active2')
+
+        $('.table-link').removeClass('table__active')
+        $(this).addClass('table__active')
+
+        var href = $(this).attr('href');
+        $(href).addClass('graph__active2');
+
+    })
 });
 
 var burgerBtn = document.querySelector('.burger'),
