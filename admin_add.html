@@ -6,161 +6,283 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css//bootstrap-grid.min.css" />
-	<link rel="stylesheet" href="css/owl.carousel.min.css" />
-	<link rel="stylesheet" href="css/owl.theme.default.min.css" />
-	<link rel="stylesheet" href="css/style.min.css" />
 	<link rel="stylesheet" href="css/fixed-style.css">
 	<link rel="stylesheet" href="css/admin.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-	<title>Реферальная программа</title>
+	<link rel="stylesheet" href="./css/slick.css">
+	<link rel="stylesheet" href="css/style.min.css" />
+	<title>Главная</title>
 </head>
 
 <body>
-	<header class="header">
-		<div class="header__container">
-			<div class="container-fluid">
-				<div class="header-body">
-					<div class="header-navigation">
-						<div class="logo-block">
-							<a href="#" class="header__logo">
-								<img src="./images/Header/logo.svg" alt="Logo">
-								<span class="logo-text">SpaceInvest</span>
+	<div class="admin-wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="container-fluid">
+					<div class="header-body">
+						<div class="header-navigation">
+							<a href="/admin.html" class="logo__link">
+								<img src="./images/custom/logo.png" alt="logo" class="logo__img">
+								<p class="logo__text">Admin</p>
 							</a>
-						</div>
-
-						<nav class="header__nav">
-							<a href="#" class="header__nav-link">Главная</a>
-							<a href="#" class="header__nav-link">О нас</a>
-							<a href="#" class="header__nav-link">Связь</a>
-
-						</nav>
-						<div class="menu-additional">
-							<div class="my-menu" data-da=".panel__container,767,last">
-								<span>Моё меню</span>
-								<img src="./images/Header/arrow-light.svg" alt="Arrow">
-								<div class="my-menu__dropdown">
-									<a href="/" class="my-menu__link">Профиль</a><a href="/"
-										class="my-menu__link">Кошелек</a><a href="/"
-										class="my-menu__link">Инвестиции</a><a href="/" class="my-menu__link">Выйти</a>
-								</div>
-							</div>
-							<div class="lang" data-da=".panel__container,767,last">
-								<span>Eng</span>
-								<img src="./images/Header/arrow-blue.svg" alt="Arrow">
-							</div>
-							<a href="#" class="notify">
-								<img src="./images/Header/notify.svg" alt="Notify">
-							</a>
-							<a href="#" class="burger">
-								<span class="burger-line"></span>
-							</a>
+							<button class="header-filter__btn">
+								<img src="./images/custom/Filter.svg" alt="Filter">
+							</button>
+							<ul class="header-menu">
+								<li class="header-menu__list header-menu__notif">
+									<a href="#" class="header-menu__link mail-link">
+										<span>2</span>
+										<img src="./images/custom/Message.png" alt="Message">
+									</a>
+									<div class="header-notifi">
+										<div class="header-notifi__inner">
+											<div class="header-notifi__top">
+												<div class="header-notifi__top_title">Уведомления</div>
+												<a href="#" class="header-notifi__read">Отметить все как прочитанные</a>
+											</div>
+											<ul class="header-notifi__content">
+												<li class="header-notifi__list">
+													<div class="header-notifi__blog">
+														<div class="header-notifi__title">Title of the post</div>
+														<div class="header-notifi__text">
+															Lorem ipsum dolor sit amet,
+															consectetur adipiscing elit. Quisque convallis neque sit
+															amet mattis
+														</div>
+													</div>
+													<div class="header-notifi__mess">
+														<div class="header-notifi__time">42m</div>
+														<label class="header-notifi__container">
+															<input type="checkbox">
+															<span class="checkmark"></span>
+														</label>
+													</div>
+												</li>
+												<li class="header-notifi__list">
+													<div class="header-notifi__blog">
+														<div class="header-notifi__title">Title of the post</div>
+														<div class="header-notifi__text">
+															Lorem ipsum dolor sit amet,
+															consectetur adipiscing elit. Quisque convallis neque sit
+															amet mattis
+														</div>
+													</div>
+													<div class="header-notifi__mess">
+														<div class="header-notifi__time">42m</div>
+														<label class="header-notifi__container">
+															<input type="checkbox">
+															<span class="checkmark"></span>
+														</label>
+													</div>
+												</li>
+												<li class="header-notifi__list">
+													<div class="header-notifi__blog">
+														<div class="header-notifi__title">Title of the post</div>
+														<div class="header-notifi__text">
+															Lorem ipsum dolor sit amet,
+															consectetur adipiscing elit. Quisque convallis neque sit
+															amet mattis
+														</div>
+													</div>
+													<div class="header-notifi__mess">
+														<div class="header-notifi__time">42m</div>
+														<label class="header-notifi__container">
+															<input type="checkbox">
+															<span class="checkmark"></span>
+														</label>
+													</div>
+												</li>
+											</ul>
+											<span class="header-notifi__arrow"></span>
+										</div>
+									</div>
+								</li>
+								<li class="header-menu__list mobile-hidden">
+									<a href="#" class="header-menu__link admin-link">
+										<span><img src="./images/custom/asdmin-img.png" alt="admin"></span>
+										<p class="header-menu__text">admin</p>
+									</a>
+								</li>
+								<li class="header-menu__list mobile-hidden">
+									<a href="#" class="header-menu__link">
+										<img src="./images/custom/2 User.png" alt="2 User">
+									</a>
+								</li>
+								<li class="header-menu__list mobile-hidden">
+									<a href="#" class="header-menu__link">
+										<img src="./images/custom/Logout.png" alt="Logout">
+									</a>
+								</li>
+								<li class="burger">
+									<span></span>
+									<span></span>
+									<span></span>
+								</li>
+							</ul>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</header>
-	<!-- Left Panel -->
-	<div class="panel">
-		<div class="panel__container">
-			<a href="./lk_index.html" class="panel-link">
-				<img src="./images/Panel/user.svg" alt="#">
-				<span>Профиль</span>
+		</header>
+
+		<!-- Left Panel -->
+		<div class="panel">
+			<a href="/admin.html" class="logo__link">
+				<img src="./images/custom/logo.png" alt="logo" class="logo__img">
+				<p class="logo__text">Admin</p>
 			</a>
-			<a href="./lk_currency.html" class="panel-link">
-				<img src="./images/Panel/Wallet.svg" alt="#">
-				<span>Мультикошелек</span>
+			<a href="#" class="admin__link">
+				<div class="admin__img">
+					<span></span>
+					<img src="./images/custom/asdmin-img.png" alt="admin-img">
+				</div>
+				<div class="admin__wrapper">
+					<p class="admin__text">admin</p>
+					<div class="admin__online">
+						<span></span>
+						<p>В сети</p>
+					</div>
+				</div>
 			</a>
-			<a href="./lk_tarif.html" class="panel-link">
-				<img src="./images/Panel/Work.svg" alt="#">
-				<span>Инвестиции</span>
-			</a>
-			<a href="./lk_graph.html" class="panel-link">
-				<img src="./images/Panel/user3.svg" alt="#">
-				<span>Партнерам</span>
-			</a>
-			<a href="#" class="panel-link active">
-				<img src="./images/Panel/Logout.svg" alt="#">
-				<span>Выйти</span>
-			</a>
+			<ul class="panel-menu">
+				<li class="panel-menu__list">
+					<a href="#" class="panel-menu__link link-active">
+						<img src="./images/custom/Category.svg" alt="Category">
+						<p>Главная</p>
+					</a>
+				</li>
+				<li class="panel-menu__list">
+					<a href="#" class="panel-menu__link">
+						<img src="./images/custom/3 User.svg" alt="3 User">
+						<p>Пользователи</p>
+					</a>
+				</li>
+				<li class="panel-menu__list">
+					<a href="#" class="panel-menu__link">
+						<img src="./images/custom/Wallet.svg" alt="Wallet">
+						<p>Список криптовалют</p>
+					</a>
+				</li>
+				<li class="panel-menu__list">
+					<a href="#" class="panel-menu__link">
+						<img src="./images/custom/Document.svg" alt="Document">
+						<p>Новости</p>
+					</a>
+				</li>
+				<li class="panel-menu__list">
+					<a href="#" class="panel-menu__link">
+						<img src="./images/custom/Graph.svg" alt="Graph">
+						<p>Запрос на вывод</p>
+					</a>
+				</li>
+				<li class="panel-menu__list">
+					<a href="#" class="panel-menu__link">
+						<img src="./images/custom/Work.svg" alt="Work">
+						<p>Инвестиции</p>
+					</a>
+				</li>
+				<li class="panel-menu__list">
+					<a href="#" class="panel-menu__link panel-settings">
+						<img src="./images/custom/Setting.svg" alt="Setting">
+						<p>Настройки</p>
+						<img class="panel-menu__arrow" src="./images/custom/Arrow - Down 2.png" alt="Arrow - Down">
+					</a>
+					<ul class="panel-settings__menu">
+						<li class="panel-settings__list">
+							<a href="#" class="panel-settings__link">
+								<img class="panel-settings__img" src="./images/custom/Arrow - Right Circle.png"
+									alt="Right Circle">
+								Цены binance.com
+							</a>
+						</li>
+						<li class="panel-settings__list">
+							<a href="#" class="panel-settings__link">
+								<img class="panel-settings__img" src="./images/custom/Arrow - Right Circle.png"
+									alt="Right Circle">
+								Баланс
+							</a>
+						</li>
+						<li class="panel-settings__list">
+							<a href="#" class="panel-settings__link">
+								<img class="panel-settings__img" src="./images/custom/Arrow - Right Circle.png"
+									alt="Right Circle">
+								Параметры
+							</a>
+						</li>
+						<li class="panel-settings__list">
+							<a href="#" class="panel-settings__link panel-invest">
+								<img class="panel-settings__img" src="./images/custom/Arrow - Right Circle.png"
+									alt="Right Circle">
+								Инвестиции
+							</a>
+							<ul class="panel-invest__menu">
+								<li class="panel-invest__list">
+									<a href="#" class="panel-invest__link">
+										<img class="panel-invest__img" src="./images/custom/Arrow - Right 3.png" alt="">
+										Сроки
+									</a>
+								</li>
+								<li class="panel-invest__list">
+									<a href="#" class="panel-invest__link">
+										<img class="panel-invest__img" src="./images/custom/Arrow - Right 3.png" alt="">
+										Лог
+									</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li class="panel-menu__list panel-noti">
+					<a class="panel-menu__link panel-noti__btn" href="#">
+						<img src="./images/custom/Message.png" alt="Message">
+						<p>Уведомления</p>
+					</a>
+				</li>
+			</ul>
+
 		</div>
-	</div>
-	<div class="personal">
-		<h2 class="admin__h2">Добавить</h2>
-		<div class="admin__input">
-			<p class="input__text">Parrent</p>
-			<input placeholder="All" type="text" name="">
-		</div>
-		<div class="admin__input">
-			<p class="input__text">Service Name</p>
-			<input placeholder="-" type="text" name="">
-		</div>
-		<div class="admin__input">
-			<p class="input__text">Name *</p>
-			<input placeholder="123123" type="text" name="">
-		</div>
-		<div class="admin__input admin__input_1">
-			<p class="input__text">Value *</p>
-			<input placeholder="Value *" type="text" name="">
-		</div>
-		<div class="button__right">
-			<button class="green__button" type=""><img src="images/Admin/Tick Square.svg" alt="">
-				<p>Сохранить</p>
-			</button>
-		</div>
-	</div>
-	<footer class="footer">
-		<div class="container-fluid">
-			<div class="footer__container">
-				<a href="#" class="footer-left">
-					© SpaceInvest 2021 Все права защищены
-				</a>
-				<nav class="footer-nav">
-					<a href="" class="footer-nav-link">User Agreement</a>
-					<a href="" class="footer-nav-link">Privacy Policy</a>
-					<a href="" class="footer-nav-link">Cookie Policy</a>
-					<a href="" class="footer-nav-link"> E-Sign Consent</a>
-				</nav>
+
+		<div class="personal">
+			<h2 class="admin__h2">Добавить</h2>
+			<div class="admin__input">
+				<p class="input__text">Parrent</p>
+				<input placeholder="All" type="text" name="">
+			</div>
+			<div class="admin__input">
+				<p class="input__text">Service Name</p>
+				<input placeholder="-" type="text" name="">
+			</div>
+			<div class="admin__input">
+				<p class="input__text">Name *</p>
+				<input placeholder="123123" type="text" name="">
+			</div>
+			<div class="admin__input admin__input_1">
+				<p class="input__text">Value *</p>
+				<input placeholder="Value *" type="text" name="">
+			</div>
+			<div class="button__right">
+				<button class="green__button" type=""><img src="images/Admin/Tick Square.svg" alt="">
+					<p>Сохранить</p>
+				</button>
 			</div>
 		</div>
-	</footer>
-	<script src="./js/jQuery.js"></script>
-	<script src="./js/slider.js"></script>
-	<script src="./Libs/Smooth-scroll/smooth-scrollbar.js"></script>
-	<script>
-		const scrollbar0 = Scrollbar.init(document.querySelector('.tarif-choose-1-outer'), {
-			damping: 0.2,
-			alwaysShowTracks: true
-		});
 
-		const scrollbar1 = Scrollbar.init(document.querySelector('.variant-choose-1-outer'), {
-			damping: 0.2,
-			alwaysShowTracks: true
-		});
-		const scrollbar2 = Scrollbar.init(document.querySelector('.currency-tb-wrapper'), {
-			damping: 0.2,
-			alwaysShowTracks: true
-		});
+		<footer class="footer">
+			<div class="container-fluid">
+				<div class="footer__container">
+					<a href="#" class="footer-left">
+						© SpaceInvest 2021 Все права защищены
+					</a>
+				</div>
+			</div>
+		</footer>
+	</div>
 
-		const burgerBtn = document.querySelector('.burger'),
-			mobileMenu = document.querySelector('.panel');
-
-		// Burger menu
-		burgerBtn.addEventListener('click', e => {
-			e.preventDefault();
-			mobileMenu.classList.toggle('active');
-			document.querySelector('.burger-line').classList.toggle('active');
-		});
-	</script>
-	<script src="./Libs/DynamicAdapt/script.js"></script>
-	<!-- <script src="./scripts/script.js"></script> -->
-	<script>
-		document.querySelector('.my-menu').addEventListener('click', function () {
-			this.classList.toggle('active');
-		})
-	</script>
+	<script src="./js/jquery.js"></script>
+	<script src="./js/slick.js"></script>
+	<script src="./js/script.js"></script>
 </body>
 
 </html>

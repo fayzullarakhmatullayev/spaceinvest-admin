@@ -187,9 +187,103 @@ $('#customChart2').mousemove(function (e) {
     }
 });
 
+$('#customChart3').mousemove(function (e) {
+    var x = e.clientX
+    let windowWidth = $(window).innerWidth()
+    if (x < (windowWidth / 2) + 50) {
+        $('#customChart3 .apexcharts-tooltip').removeClass("apexcharts-tooltip--left ")
+        $('#customChart3 .apexcharts-tooltip').addClass("apexcharts-tooltip--right ")
+    } else {
+        $('#customChart3 .apexcharts-tooltip').removeClass("apexcharts-tooltip--right ")
+        $('#customChart3 .apexcharts-tooltip').addClass("apexcharts-tooltip--left ")
+    }
+});
+
+function Chart4() {
+    var options = {
+        series: [{
+                name: 'series2',
+                data: [1200, 1400, 1900, 2300, 2800, 2500],
+                zIndex: 2
+            }, {
+                name: 'series1',
+                data: [1600, 2000, 2500, 3200, 4000, 2500],
+                zIndex: 1
+            },
+
+        ],
+        chart: {
+            height: 350,
+            type: 'area',
+            fontFamily: 'Roboto, sans-serif',
+            foreColor: '#A2A3A5',
+            // stacked: false,
+            toolbar: {
+                show: false
+            },
+        },
+        colors: ['#E9E7F1', '#5273e2'],
+        // fill: {
+        //     colors: ['#5273e2', '#ECE9F1'],
+        //     opacity: [0.1, 0.9],
+        // },
+        fill: {
+            type: ["solid", "gradient"],
+            // colors: ['#5273e2', '#ECE9F1'],
+            gradient: {
+                // shade: 'dark',
+                type: "horizontal",
+                shadeIntensity: 1,
+                inverseColors: false,
+                opacityFrom: 0.3,
+                opacityTo: 0.01,
+                stops: [0, 30, 50, 90, 141]
+            },
+            opacity: [0.3, 1],
+        },
+        dataLabels: {
+            enabled: false
+        },
+        stroke: {
+            curve: 'smooth',
+            width: 1,
+        },
+        xaxis: {
+            categories: ["2021 - 05 - 21", "2021 - 05 - 21", "2021 - 05 - 21", "2021 - 05 - 21", "2021 - 05 - 21", "2021 - 05 - 21"],
+            labels: {
+                style: {
+                    colors: [],
+                    fontSize: '12px',
+                    fontFamily: 'Red Hat Text, sans-serif',
+                    fontWeight: 400,
+                    cssClass: 'apexcharts-xaxis-label',
+                },
+            }
+        },
+        yaxis: {
+            categories: ['$1000', '$2000', '$3000', '$4000'],
+            labels: {
+                style: {
+                    colors: [],
+                    fontSize: '11px',
+                    fontFamily: 'Red Hat Text, sans-serif',
+                    fontWeight: 400,
+                    cssClass: 'apexcharts-xaxis-label',
+                },
+            }
+        }
+    };
+
+
+    var chart = new ApexCharts(document.querySelector("#customChart3"), options);
+    chart.render();
+}
+
 $(document).ready(function () {
     Chart1()
     Chart2()
+    Chart4()
+
     let yLegends = $('.apexcharts-yaxis tspan')
     console.log(yLegends)
     for (let i = 0; i < yLegends.length; i++) {

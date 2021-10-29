@@ -4336,3 +4336,28 @@ body {
 #chart3 {
     margin: 20px auto 0;
 }
+
+.dashboard_title {
+    @include _767-block {
+        flex-direction: column;
+    }
+}
+
+.last_btn {
+    @include _767-block {
+        margin-right: 0 !important;
+    }
+}
+
+.admin__h2_1 {
+    @include _767-block {
+        margin-bottom: 15px;
+    }
+}
+
+.blue__button {
+    @include _575-block {
+        padding: 14px 25px;
+        font-size: 12px;
+    }
+}
