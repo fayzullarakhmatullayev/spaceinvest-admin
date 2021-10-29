@@ -285,10 +285,8 @@ $(document).ready(function () {
     Chart4()
 
     let yLegends = $('.apexcharts-yaxis tspan')
-    console.log(yLegends)
     for (let i = 0; i < yLegends.length; i++) {
         let legendVal = yLegends[i].textContent
-        console.log(yLegends[i].textContent = ('$' + legendVal))
     }
     let chartTooltipValues = $(".apexcharts-tooltip-text-y-value")
     for (let i = 0; i < chartTooltipValues.length; i++) {
