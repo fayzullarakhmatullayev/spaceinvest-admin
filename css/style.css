@@ -3707,6 +3707,10 @@ body {
   width: auto;
 }
 
+#chart3 {
+  margin: 20px auto 0;
+}
+
 @media (max-width: 1765px) {
   .category.sign-category {
     margin-bottom: -86px !important;
