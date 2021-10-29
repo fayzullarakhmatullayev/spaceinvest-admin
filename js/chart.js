@@ -222,7 +222,7 @@ function Chart3() {
             breakpoint: 480,
             options: {
                 chart: {
-                    width: 200
+                    width: 350
                 },
                 legend: {
                     show: false
