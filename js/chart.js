@@ -279,27 +279,6 @@ function Chart4() {
     chart.render();
 }
 
-$(document).ready(function () {
-    Chart1()
-    Chart2()
-    Chart4()
-
-    let yLegends = $('.apexcharts-yaxis tspan')
-    for (let i = 0; i < yLegends.length; i++) {
-        let legendVal = yLegends[i].textContent
-    }
-    let chartTooltipValues = $(".apexcharts-tooltip-text-y-value")
-    for (let i = 0; i < chartTooltipValues.length; i++) {
-        // console.log(chartTooltipValues[i].text())
-        // let tooltipVal = chartTooltipValues[i].html()
-        // console.log(chartTooltipValues[i].innerHTML('$' + tooltipVal))
-    }
-    // $('.apexcharts-tooltip-text-y-value').each(function() {
-    //     // выведем содержимое текущего элемента в консоль
-    //     console.log($(this)[0].innerHTML);
-    // });
-});
-
 function Chart3() {
     var options = {
         series: [44, 55, 13, 33],
@@ -331,4 +310,93 @@ function Chart3() {
     var chart = new ApexCharts(document.querySelector("#chart3"), options);
     chart.render();
 }
-Chart3()
+
+
+function Chart5(){
+    var options = {
+        series: [{
+        name: 'Inflation',
+        data: [2.3, 3.1, 4.0, 10.1, 4.0, 3.6, 3.2, 2.3, 1.4, 0.8, 0.5, 0.2]
+      }],
+        chart: {
+        height: 350,
+        type: 'bar',
+      },
+      plotOptions: {
+        bar: {
+          borderRadius: 10,
+
+          dataLabels: {
+            position: 'top', // top, center, bottom
+          },
+        }
+      },
+      dataLabels: {
+        enabled: true,
+        formatter: function (val) {
+          return val + "%";
+        },
+        offsetY: -20,
+        style: {
+          fontSize: '12px',
+          colors: ["#304758"]
+        }
+      },
+
+      xaxis: {
+        categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+        position: 'bottom',
+        axisBorder: {
+          show: false
+        },
+        axisTicks: {
+          show: false
+        },
+        crosshairs: {
+          fill: {
+            type: 'gradient',
+            gradient: {
+              colorFrom: '#D8E3F0',
+              colorTo: '#BED1E6',
+              stops: [0, 100],
+              opacityFrom: 0.4,
+              opacityTo: 0.5,
+            }
+          }
+        },
+        tooltip: {
+          enabled: true,
+        }
+      },
+      yaxis: {
+        axisBorder: {
+          show: false
+        },
+        axisTicks: {
+          show: false,
+        },
+        labels: {
+          show: false,
+          formatter: function (val) {
+            return val + "%";
+          }
+        }
+
+      },
+      title: {
+        text: '',
+        floating: true,
+        offsetY: 330,
+        align: 'center',
+        style: {
+          color: '#444'
+        }
+      }
+      };
+
+      var chart = new ApexCharts(document.querySelector("#chart1"), options);
+      chart.render();
+}
+Chart5()
+Chart2()
+Chart4()

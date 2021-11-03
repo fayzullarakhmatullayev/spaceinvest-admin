@@ -3711,6 +3711,126 @@ body {
   margin: 20px auto 0;
 }
 
+.apexcharts-menu-icon {
+  display: none;
+}
+
+.profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.profile-user {
+  max-width: 170px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 65px;
+}
+
+.profile-user__img {
+  display: block;
+  margin-bottom: 28px;
+  border: none;
+  color: #fff;
+}
+
+.profile-user__btn {
+  max-width: 144px;
+  width: 100%;
+  padding: 9px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: none;
+  border-radius: 40px;
+  margin-bottom: 21px;
+  outline: none;
+}
+
+.profile-user__btn img {
+  display: block;
+  margin-right: 10px;
+}
+
+.profile-user__edit {
+  background-color: #5252DD;
+}
+
+.profile-user__delete {
+  background-color: #EB5757;
+}
+
+.profile-user__delete img {
+  margin-right: 15px;
+}
+
+.profile-table {
+  width: 920px;
+}
+
+.profile-table__wrapper {
+  width: 920px;
+  overflow: auto;
+  margin-bottom: 30px;
+  display: block;
+}
+
+.profile-table__tr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-bottom: 1px solid #F7F7F7;
+}
+
+.profile-table__tr:nth-child(even) {
+  background: rgba(196, 196, 196, 0.06);
+}
+
+.profile-table__td {
+  width: 50%;
+  padding: 12px;
+  font-size: 14px;
+  font-family: a-b;
+}
+
+.profile-table__td:first-child {
+  color: #000;
+}
+
+.profile-table__td:last-child {
+  color: #4F4F4F;
+}
+
+.profile-table__active {
+  max-width: 164px;
+  width: 100%;
+  border-radius: 40px;
+  border: none;
+  background: #27AE60;
+  padding: 7px 15px 9px;
+  font-family: a-b;
+  font-size: 12px;
+}
+
 @media (max-width: 1765px) {
   .category.sign-category {
     margin-bottom: -86px !important;
@@ -4406,6 +4526,27 @@ body {
   .admin__h2_1 {
     margin-bottom: 15px;
   }
+
+  .profile {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .profile-user {
+    max-width: 100%;
+    margin-right: 0;
+  }
+
+  .profile-table__wrapper {
+    width: 499px;
+    margin: 0 auto 30px;
+  }
+
+  .profile-table {
+    width: 500px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -4430,6 +4571,10 @@ body {
   .blue__button {
     padding: 14px 25px;
     font-size: 12px;
+  }
+
+  .profile-table__wrapper {
+    width: 350px;
   }
 }
 

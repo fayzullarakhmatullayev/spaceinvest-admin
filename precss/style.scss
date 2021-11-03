@@ -4361,3 +4361,105 @@ body {
         font-size: 12px;
     }
 }
+.apexcharts-menu-icon{
+    display: none;
+}
+.profile{
+    display: flex;
+    justify-content: space-between;
+    @include _767-block{
+        flex-direction: column;
+    }
+    &-user{
+        max-width: 170px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 65px;
+        @include _767-block{
+            max-width: 100%;
+            margin-right: 0;
+        }
+        &__img{
+            display: block;
+            margin-bottom: 28px;
+            border: none;
+            color: #fff;
+        }
+        &__btn{
+            max-width: 144px;
+            width: 100%;
+            padding: 9px 15px;
+            display: flex;
+            align-items: center;
+            border: none;
+            border-radius: 40px;
+            margin-bottom: 21px;
+            outline: none;
+            img{
+                display: block;
+                margin-right: 10px;
+            }
+        }
+        &__edit{
+            background-color: #5252DD;
+        }
+        &__delete{
+            background-color: #EB5757;
+            img{
+                margin-right: 15px;
+            }
+        }
+    }
+    &-table{
+        &__wrapper{
+            width: 920px;
+            overflow: auto;
+            margin-bottom: 30px;
+            display: block;
+            @include _767-block{
+                width: 499px;
+                margin: 0 auto 30px;
+            }
+            @include _575-block{
+                width: 350px;
+            }
+        }
+        width: 920px;
+        @include _767-block{
+            width: 500px;
+        }
+        &__tr{
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #F7F7F7;
+            &:nth-child(even){
+                background: rgba(196, 196, 196, 0.06);
+            }
+        }
+        &__td{
+            width: 50%;
+            padding: 12px;
+            font-size: 14px;
+            font-family: a-b;
+            &:first-child{
+                color: #000;
+
+            }
+            &:last-child{
+                color: #4F4F4F;
+            }
+        }
+        &__active{
+            max-width: 164px;
+            width: 100%;
+            border-radius: 40px;
+            border: none;
+            background: #27AE60;
+            padding: 7px 15px 9px;
+            font-family: a-b;
+            font-size: 12px;
+        }
+    }
+}
