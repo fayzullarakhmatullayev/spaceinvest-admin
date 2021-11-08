@@ -12,7 +12,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/slick.css">
-    <link rel="stylesheet" href="./datepicker/datarangepicker.css">
     <link rel="stylesheet" href="css/style.min.css" />
     <title>Главная</title>
 </head>
@@ -247,7 +246,7 @@
 
         <div class="personal">
             <div class="portfolio-wrapper">
-                <h2 class="admin__h2">Портфель клиентов</h2>
+                <h2 class="admin__h2">Запрос на вывод</h2>
                 <div class="portfolio-wrapper__top">
                     <select class="portfolio__input" type="text" name="">
                         <option>25</option>
@@ -258,24 +257,20 @@
                 </div>
             </div>
             <div class="scroll__right">
-                <table class="currency currency_a">
+                <table class="currency currency_a recall-btn">
                     <tbody>
                         <tr class="heading-row">
                             <th class="tb-heading">№</th>
                             <th class="tb-heading">Пользователь</th>
-                            <th class="tb-heading">Процент</th>
-                            <th class="tb-heading">Криптовалюта</th>
-                            <th class="tb-heading">Сумма</th>
-                            <th class="tb-heading">На сколько вложил</th>
-                            <th class="tb-heading"></th>
+                            <th class="tb-heading">Валютная пара</th>
+                            <th class="tb-heading">Кол-во</th>
+                            <th class="tb-heading">Время</th>
+                            <th class="tb-heading">Статус</th>
                         </tr>
                         <tr class="history-row even">
                             <td class="history-row-info">
                             </td>
                             <td class="history-row-info">
-                                <input class="portfolio__input" type="text" placeholder="все">
-                            </td>
-                            <td class="history-row-info">
                                 <input class="portfolio__input" type="text" name="">
                             </td>
                             <td class="history-row-info">
@@ -285,21 +280,40 @@
                                 <input class="portfolio__input" type="text" name="">
                             </td>
                             <td class="history-row-info">
-                                <div class="data-wrapper">
-                                    <img src="./images/custom/Calendar.png" alt="Calendar" class="data-calendar">
-                                    <img src="./images/custom/arrow-down.png" alt="arrow-down" class="data-arrow">
-                                    <daterangepicker-two-input></daterangepicker-two-input>
-                                </div>
-
+                                <input class="portfolio__input" type="text" name="">
                             </td>
-                            <td class="history-row-info">
-                                <select class="portfolio__input portfolio__select" type="text" name="">
+                            <td class="history-row-info" style="width: 250px;">
+                                <select class="portfolio__input portfolio__select" type="text" name="" style="width: 250px;">
                                     <option>option 1</option>
                                     <option>option 2</option>
                                     <option>option 3</option>
                                 </select>
                             </td>
+                            <td class="history-row-info"></td>
+                        </tr>
+                        <tr class="history-row even">
                             <td class="history-row-info">
+                                <div class="money-type">
+                                    <span>1</span>
+                                </div>
+                            </td>
+                            <td class="history-row-info"></td>
+                            <td class="history-row-info">
+                                <span class="sum"><img src="./images/custom/bit-icon1.png" alt="">BTC</span>
+                            </td>
+                            <td class="history-row-info">
+                                <span class="time-text">0.31230000</span>
+                            </td>
+                            <td class="history-row-info">
+                                <span class="sum portfel">2021-02-02 | 03:59:31</span>
+                            </td>
+                            <td class="history-row-info">
+                                <button class="general-button table-btn btn-green">Активно</button>
+                            </td>
+                            <td class="history-row-info">
+                                <img src="images/Admin/replace.svg" alt="">
+                                <img src="images/Admin/Show.svg" alt="">
+                                <img src="images/Admin/Delete.svg" alt="">
                             </td>
                         </tr>
                         <tr class="history-row even">
@@ -308,62 +322,15 @@
                                     <span>1</span>
                                 </div>
                             </td>
-                            <td class="history-row-info">
-                                <span class="sum"><img src="./images/custom/user-img.png" alt="">daria</span>
-                            </td>
-                            <td class="history-row-info">
-                                <div class="time-block">
-                                    <span class="time-text">25%</span>
-                                </div>
-                            </td>
-                            <td class="history-row-info">
-                                <span class="sum"><img src="./images/custom/bit-icon1.png" alt="">BTC</span>
-                            </td>
-                            <td class="history-row-info">
-                                <span class="sum portfel">1000.09328132</span>
-                            </td>
-                            <td class="history-row-info">
-                                <span class="sum">1 д.</span>
-                            </td>
-                            <td class="history-row-info">
-                                <button class="general-button table-btn btn-green">Активно</button>
-                            </td>
-                            <td class="history-row-info">
-                                <img src="images/Admin/replace.svg" alt="">
-                                <img src="images/Admin/Show.svg" alt="">
-                                <img src="images/Admin/Delete.svg" alt="">
-                            </td>
-                        </tr>
-                        <tr class="history-row even">
-                            <td class="history-row-info">
-                                <div class="money-type">
-                                    <span>2</span>
-                                </div>
-                            </td>
-                            <td class="history-row-info">
-                                <span class="sum"><img src="./images/custom/user-img.png" alt="">daria</span>
-                            </td>
-                            <td class="history-row-info">
-                                <div class="time-block">
-                                    <span class="time-text">25%</span>
-                                </div>
-                            </td>
+                            <td class="history-row-info"></td>
                             <td class="history-row-info">
                                 <span class="sum"><img src="./images/custom/bit-icon2.png" alt="">USDT</span>
                             </td>
                             <td class="history-row-info">
-                                <span class="sum portfel">1000.09328132</span>
+                                <span class="time-text">10.00000</span>
                             </td>
                             <td class="history-row-info">
-                                <span class="sum">5 д.</span>
-                                <span class="date">
-                                    21-04-2021 -
-                                    21-04-2021
-                                </span>
-                                <span class="date">
-                                    21-04-2021 -
-                                    21-04-2021
-                                </span>
+                                <span class="sum portfel">2021-02-02 | 03:59:31</span>
                             </td>
                             <td class="history-row-info">
                                 <button class="general-button table-btn btn-orange">Ожидает</button>
@@ -374,223 +341,6 @@
                                 <img src="images/Admin/Delete.svg" alt="">
                             </td>
                         </tr>
-                        <tr class="history-row even">
-                            <td class="history-row-info">
-                                <div class="money-type">
-                                    <span>3</span>
-                                </div>
-                            </td>
-                            <td class="history-row-info">
-                                <span class="sum"><img src="./images/custom/user-img.png" alt="">daria</span>
-                            </td>
-                            <td class="history-row-info">
-                                <div class="time-block">
-                                    <span class="time-text">25%</span>
-                                </div>
-                            </td>
-                            <td class="history-row-info">
-                                <span class="sum"><img src="./images/custom/bit-icon1.png" alt="">BTC</span>
-                            </td>
-                            <td class="history-row-info">
-                                <span class="sum portfel">1000.09328132</span>
-                            </td>
-                            <td class="history-row-info">
-                                <span class="sum">1 д.</span>
-                            </td>
-                            <td class="history-row-info">
-                                <button class="general-button table-btn btn-green">Активно</button>
-                            </td>
-                            <td class="history-row-info">
-                                <img src="images/Admin/replace.svg" alt="">
-                                <img src="images/Admin/Show.svg" alt="">
-                                <img src="images/Admin/Delete.svg" alt="">
-                            </td>
-                        </tr>
-                        <tr class="history-row even">
-                            <td class="history-row-info">
-                                <div class="money-type">
-                                    <span>4</span>
-                                </div>
-                            </td>
-                            <td class="history-row-info">
-                                <span class="sum"><img src="./images/custom/user-img.png" alt="">daria</span>
-                            </td>
-                            <td class="history-row-info">
-                                <div class="time-block">
-                                    <span class="time-text">25%</span>
-                                </div>
-                            </td>
-                            <td class="history-row-info">
-                                <span class="sum"><img src="./images/custom/bit-icon2.png" alt="">USDT</span>
-                            </td>
-                            <td class="history-row-info">
-                                <span class="sum portfel">1000.09328132</span>
-                            </td>
-                            <td class="history-row-info">
-                                <span class="sum">5 д.</span>
-                                <span class="date">
-                                    21-04-2021 -
-                                    21-04-2021
-                                </span>
-                                <span class="date">
-                                    21-04-2021 -
-                                    21-04-2021
-                                </span>
-                            </td>
-                            <td class="history-row-info">
-                                <button class="general-button table-btn btn-orange">Ожидает</button>
-                            </td>
-                            <td class="history-row-info">
-                                <img src="images/Admin/replace.svg" alt="">
-                                <img src="images/Admin/Show.svg" alt="">
-                                <img src="images/Admin/Delete.svg" alt="">
-                            </td>
-                        </tr>
-                        <tr class="history-row even">
-                            <td class="history-row-info">
-                                <div class="money-type">
-                                    <span>5</span>
-                                </div>
-                            </td>
-                            <td class="history-row-info">
-                                <span class="sum"><img src="./images/custom/user-img.png" alt="">daria</span>
-                            </td>
-                            <td class="history-row-info">
-                                <div class="time-block">
-                                    <span class="time-text">25%</span>
-                                </div>
-                            </td>
-                            <td class="history-row-info">
-                                <span class="sum"><img src="./images/custom/bit-icon1.png" alt="">BTC</span>
-                            </td>
-                            <td class="history-row-info">
-                                <span class="sum portfel">1000.09328132</span>
-                            </td>
-                            <td class="history-row-info">
-                                <span class="sum">1 д.</span>
-                            </td>
-                            <td class="history-row-info">
-                                <button class="general-button table-btn btn-green">Активно</button>
-                            </td>
-                            <td class="history-row-info">
-                                <img src="images/Admin/replace.svg" alt="">
-                                <img src="images/Admin/Show.svg" alt="">
-                                <img src="images/Admin/Delete.svg" alt="">
-                            </td>
-                        </tr>
-                        <tr class="history-row even">
-                            <td class="history-row-info">
-                                <div class="money-type">
-                                    <span>6</span>
-                                </div>
-                            </td>
-                            <td class="history-row-info">
-                                <span class="sum"><img src="./images/custom/user-img.png" alt="">daria</span>
-                            </td>
-                            <td class="history-row-info">
-                                <div class="time-block">
-                                    <span class="time-text">25%</span>
-                                </div>
-                            </td>
-                            <td class="history-row-info">
-                                <span class="sum"><img src="./images/custom/bit-icon2.png" alt="">USDT</span>
-                            </td>
-                            <td class="history-row-info">
-                                <span class="sum portfel">1000.09328132</span>
-                            </td>
-                            <td class="history-row-info">
-                                <span class="sum">5 д.</span>
-                                <span class="date">
-                                    21-04-2021 -
-                                    21-04-2021
-                                </span>
-                                <span class="date">
-                                    21-04-2021 -
-                                    21-04-2021
-                                </span>
-                            </td>
-                            <td class="history-row-info">
-                                <button class="general-button table-btn btn-orange">Ожидает</button>
-                            </td>
-                            <td class="history-row-info">
-                                <img src="images/Admin/replace.svg" alt="">
-                                <img src="images/Admin/Show.svg" alt="">
-                                <img src="images/Admin/Delete.svg" alt="">
-                            </td>
-                        </tr>
-                        <tr class="history-row even">
-                            <td class="history-row-info">
-                                <div class="money-type">
-                                    <span>7</span>
-                                </div>
-                            </td>
-                            <td class="history-row-info">
-                                <span class="sum"><img src="./images/custom/user-img.png" alt="">daria</span>
-                            </td>
-                            <td class="history-row-info">
-                                <div class="time-block">
-                                    <span class="time-text">25%</span>
-                                </div>
-                            </td>
-                            <td class="history-row-info">
-                                <span class="sum"><img src="./images/custom/bit-icon1.png" alt="">BTC</span>
-                            </td>
-                            <td class="history-row-info">
-                                <span class="sum portfel">1000.09328132</span>
-                            </td>
-                            <td class="history-row-info">
-                                <span class="sum">1 д.</span>
-                            </td>
-                            <td class="history-row-info">
-                                <button class="general-button table-btn btn-green">Активно</button>
-                            </td>
-                            <td class="history-row-info">
-                                <img src="images/Admin/replace.svg" alt="">
-                                <img src="images/Admin/Show.svg" alt="">
-                                <img src="images/Admin/Delete.svg" alt="">
-                            </td>
-                        </tr>
-                        <tr class="history-row even">
-                            <td class="history-row-info">
-                                <div class="money-type">
-                                    <span>8</span>
-                                </div>
-                            </td>
-                            <td class="history-row-info">
-                                <span class="sum"><img src="./images/custom/user-img.png" alt="">daria</span>
-                            </td>
-                            <td class="history-row-info">
-                                <div class="time-block">
-                                    <span class="time-text">25%</span>
-                                </div>
-                            </td>
-                            <td class="history-row-info">
-                                <span class="sum"><img src="./images/custom/bit-icon2.png" alt="">USDT</span>
-                            </td>
-                            <td class="history-row-info">
-                                <span class="sum portfel">1000.09328132</span>
-                            </td>
-                            <td class="history-row-info">
-                                <span class="sum">5 д.</span>
-                                <span class="date">
-                                    21-04-2021 -
-                                    21-04-2021
-                                </span>
-                                <span class="date">
-                                    21-04-2021 -
-                                    21-04-2021
-                                </span>
-                            </td>
-                            <td class="history-row-info">
-                                <button class="general-button table-btn btn-orange">Ожидает</button>
-                            </td>
-                            <td class="history-row-info">
-                                <img src="images/Admin/replace.svg" alt="">
-                                <img src="images/Admin/Show.svg" alt="">
-                                <img src="images/Admin/Delete.svg" alt="">
-                            </td>
-                        </tr>
-
                     </tbody>
                 </table>
             </div>
@@ -607,12 +357,9 @@
         </footer>
     </div>
 
-
     <script src="./js/jquery.js"></script>
-    <script src="datepicker/jquery.mask.js"></script>
-    <script src="datepicker/moment.js"></script>
-    <script src="datepicker/daterangepicker.js"></script>
-    <script src="datepicker/datepicker.js"></script>
+    <script src="./js/apexcharts.js"></script>
+    <script src="./js/chart.js"></script>
     <script src="./js/slick.js"></script>
     <script src="./js/script.js"></script>
 </body>
