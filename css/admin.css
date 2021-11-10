@@ -30,7 +30,7 @@
 .graph img:first-child
 {
     top: 43%;
-    left: 76%;    
+    left: 76%;
 }
 .graph
 {
@@ -338,7 +338,7 @@
 }
 .blue__button
 {
-    padding: 14px 45px; 
+    padding: 14px 45px;
     background-color: #5252DD;
     font-family: Roboto;
     font-size: 15px;
@@ -379,7 +379,7 @@
     background-color: #FFCB70;
     margin-right: 12px;
     margin-bottom: 16px;
-    
+
 }
 .blue
 {
@@ -565,7 +565,12 @@
 .scroll__right
 {
     max-width: 100%;
-    overflow-x: scroll;
+    margin-bottom: 50px;
+}
+@media (max-width: 1499px){
+    .scroll__right{
+        overflow-x: scroll;
+    }
 }
 .button__red img
 {
@@ -630,7 +635,7 @@
 }
 .button__blue:hover
 {
-    background-color: #4949C6; 
+    background-color: #4949C6;
 }
 .tarif-choose-track
 {
@@ -644,7 +649,7 @@
 {
     width: 100%;
 }
-.admin__line 
+.admin__line
 {
     padding: 15px 0px;
 }
@@ -664,7 +669,7 @@
     text-align: left;
     margin-left: 12px;
 }
-.coll 
+.coll
 {
     margin-bottom: 200px;
 }
