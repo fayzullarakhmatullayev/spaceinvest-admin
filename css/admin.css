@@ -566,12 +566,9 @@
 {
     max-width: 100%;
     margin-bottom: 50px;
+    overflow-x: scroll;
 }
-@media (max-width: 1499px){
-    .scroll__right{
-        overflow-x: scroll;
-    }
-}
+
 .button__red img
 {
     margin-right: 15px;
