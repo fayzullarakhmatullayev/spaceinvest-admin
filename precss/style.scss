@@ -4679,6 +4679,11 @@ body {
         width: 62px;
         bottom: 1px;
         z-index: 3;
+        transition: 0.3s;
+        &:hover{
+            background: #5252DD;
+            color: #fff;
+        }
     }
     &-active{
         background: #5252DD;

@@ -4099,6 +4099,14 @@ body {
   width: 62px;
   bottom: 1px;
   z-index: 3;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.binance-btn:hover {
+  background: #5252DD;
+  color: #fff;
 }
 
 .binance-active {
