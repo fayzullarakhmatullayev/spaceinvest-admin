@@ -187,19 +187,9 @@ $('#customChart2').mousemove(function (e) {
     }
 });
 
-$('#customChart3').mousemove(function (e) {
-    var x = e.clientX
-    let windowWidth = $(window).innerWidth()
-    if (x < (windowWidth / 2) + 50) {
-        $('#customChart3 .apexcharts-tooltip').removeClass("apexcharts-tooltip--left ")
-        $('#customChart3 .apexcharts-tooltip').addClass("apexcharts-tooltip--right ")
-    } else {
-        $('#customChart3 .apexcharts-tooltip').removeClass("apexcharts-tooltip--right ")
-        $('#customChart3 .apexcharts-tooltip').addClass("apexcharts-tooltip--left ")
-    }
-});
 
-function Chart4() {
+
+function Chart3() {
     var options = {
         series: [{
                 name: 'series2',
@@ -279,7 +269,19 @@ function Chart4() {
     chart.render();
 }
 
-function Chart3() {
+$('#customChart3').mousemove(function (e) {
+    var x = e.clientX
+    let windowWidth = $(window).innerWidth()
+    if (x < (windowWidth / 2) + 50) {
+        $('#customChart3 .apexcharts-tooltip').removeClass("apexcharts-tooltip--left ")
+        $('#customChart3 .apexcharts-tooltip').addClass("apexcharts-tooltip--right ")
+    } else {
+        $('#customChart3 .apexcharts-tooltip').removeClass("apexcharts-tooltip--right ")
+        $('#customChart3 .apexcharts-tooltip').addClass("apexcharts-tooltip--left ")
+    }
+});
+
+function Chart4() {
     var options = {
         series: [44, 55, 13, 33],
         chart: {
@@ -397,6 +399,8 @@ function Chart5(){
       var chart = new ApexCharts(document.querySelector("#chart1"), options);
       chart.render();
 }
-Chart5()
+Chart1()
 Chart2()
+Chart3()
 Chart4()
+Chart5()
