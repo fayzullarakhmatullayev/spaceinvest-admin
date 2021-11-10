@@ -3955,7 +3955,7 @@ body {
 }
 
 .btn-green {
-  background: #27AE60;
+  background: #27AE60 !important;
 }
 
 .btn-orange {
@@ -4058,6 +4058,7 @@ body {
   -ms-flex-align: center;
   align-items: center;
   cursor: pointer;
+  border: none;
 }
 
 .binance-table {
@@ -4131,6 +4132,57 @@ body {
 .binance-next img {
   position: absolute;
   right: 15px;
+}
+
+.balance-label {
+  max-width: 377px;
+  width: 100%;
+}
+
+.balance-title {
+  margin-bottom: 25px;
+}
+
+.balance-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  border-bottom: 1px solid #eee;
+}
+
+.balance-top a {
+  font-size: 14px;
+  color: #B8B8B8;
+  width: 47px;
+  text-align: center;
+  padding-bottom: 7px;
+  font-weight: 700;
+  margin-right: 20px;
+}
+
+.balance-top__active {
+  border-bottom: 1px solid #5252DD;
+  color: #5252DD !important;
+}
+
+.balance-btns {
+  max-width: 537px;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.balance-btn1 {
+  max-width: 230px;
+  width: 100%;
+  border: none;
+  color: #fff;
+  margin-right: 15px;
+}
+
+.balance-btn2 {
+  max-width: 292px;
+  width: 100%;
 }
 
 @media (max-width: 1765px) {

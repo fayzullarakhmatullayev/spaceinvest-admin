@@ -1,0 +1,353 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css//bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="css/fixed-style.css">
+    <link rel="stylesheet" href="css/admin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="css/style.min.css" />
+    <title>Главная</title>
+</head>
+
+<body>
+    <div class="admin-wrapper">
+        <header class="header">
+            <div class="header__container">
+                <div class="container-fluid">
+                    <div class="header-body">
+                        <div class="header-navigation">
+                            <a href="/admin.html" class="logo__link">
+                                <img src="./images/custom/logo.png" alt="logo" class="logo__img">
+                                <p class="logo__text">Admin</p>
+                            </a>
+                            <button class="header-filter__btn">
+                                <img src="./images/custom/Filter.svg" alt="Filter">
+                            </button>
+                            <ul class="header-menu">
+                                <li class="header-menu__list header-menu__notif">
+                                    <a href="#" class="header-menu__link mail-link">
+                                        <span>2</span>
+                                        <img src="./images/custom/Message.png" alt="Message">
+                                    </a>
+                                    <div class="header-notifi">
+                                        <div class="header-notifi__inner">
+                                            <div class="header-notifi__top">
+                                                <div class="header-notifi__top_title">Уведомления</div>
+                                                <a href="#" class="header-notifi__read">Отметить все как прочитанные</a>
+                                            </div>
+                                            <ul class="header-notifi__content">
+                                                <li class="header-notifi__list">
+                                                    <div class="header-notifi__blog">
+                                                        <div class="header-notifi__title">Title of the post</div>
+                                                        <div class="header-notifi__text">
+                                                            Lorem ipsum dolor sit amet,
+                                                            consectetur adipiscing elit. Quisque convallis neque sit
+                                                            amet mattis
+                                                        </div>
+                                                    </div>
+                                                    <div class="header-notifi__mess">
+                                                        <div class="header-notifi__time">42m</div>
+                                                        <label class="header-notifi__container">
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                                <li class="header-notifi__list">
+                                                    <div class="header-notifi__blog">
+                                                        <div class="header-notifi__title">Title of the post</div>
+                                                        <div class="header-notifi__text">
+                                                            Lorem ipsum dolor sit amet,
+                                                            consectetur adipiscing elit. Quisque convallis neque sit
+                                                            amet mattis
+                                                        </div>
+                                                    </div>
+                                                    <div class="header-notifi__mess">
+                                                        <div class="header-notifi__time">42m</div>
+                                                        <label class="header-notifi__container">
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                                <li class="header-notifi__list">
+                                                    <div class="header-notifi__blog">
+                                                        <div class="header-notifi__title">Title of the post</div>
+                                                        <div class="header-notifi__text">
+                                                            Lorem ipsum dolor sit amet,
+                                                            consectetur adipiscing elit. Quisque convallis neque sit
+                                                            amet mattis
+                                                        </div>
+                                                    </div>
+                                                    <div class="header-notifi__mess">
+                                                        <div class="header-notifi__time">42m</div>
+                                                        <label class="header-notifi__container">
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <span class="header-notifi__arrow"></span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="header-menu__list mobile-hidden">
+                                    <a href="#" class="header-menu__link admin-link">
+                                        <span><img src="./images/custom/asdmin-img.png" alt="admin"></span>
+                                        <p class="header-menu__text">admin</p>
+                                    </a>
+                                </li>
+                                <li class="header-menu__list mobile-hidden">
+                                    <a href="#" class="header-menu__link">
+                                        <img src="./images/custom/2 User.png" alt="2 User">
+                                    </a>
+                                </li>
+                                <li class="header-menu__list mobile-hidden">
+                                    <a href="#" class="header-menu__link">
+                                        <img src="./images/custom/Logout.png" alt="Logout">
+                                    </a>
+                                </li>
+                                <li class="burger">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Left Panel -->
+        <div class="panel">
+            <a href="/admin.html" class="logo__link">
+                <img src="./images/custom/logo.png" alt="logo" class="logo__img">
+                <p class="logo__text">Admin</p>
+            </a>
+            <a href="#" class="admin__link">
+                <div class="admin__img">
+                    <span></span>
+                    <img src="./images/custom/asdmin-img.png" alt="admin-img">
+                </div>
+                <div class="admin__wrapper">
+                    <p class="admin__text">admin</p>
+                    <div class="admin__online">
+                        <span></span>
+                        <p>В сети</p>
+                    </div>
+                </div>
+            </a>
+            <ul class="panel-menu">
+                <li class="panel-menu__list">
+                    <a href="#" class="panel-menu__link link-active">
+                        <img src="./images/custom/Category.svg" alt="Category">
+                        <p>Главная</p>
+                    </a>
+                </li>
+                <li class="panel-menu__list">
+                    <a href="#" class="panel-menu__link">
+                        <img src="./images/custom/3 User.svg" alt="3 User">
+                        <p>Пользователи</p>
+                    </a>
+                </li>
+                <li class="panel-menu__list">
+                    <a href="#" class="panel-menu__link">
+                        <img src="./images/custom/Wallet.svg" alt="Wallet">
+                        <p>Список криптовалют</p>
+                    </a>
+                </li>
+                <li class="panel-menu__list">
+                    <a href="#" class="panel-menu__link">
+                        <img src="./images/custom/Document.svg" alt="Document">
+                        <p>Новости</p>
+                    </a>
+                </li>
+                <li class="panel-menu__list">
+                    <a href="#" class="panel-menu__link">
+                        <img src="./images/custom/Graph.svg" alt="Graph">
+                        <p>Запрос на вывод</p>
+                    </a>
+                </li>
+                <li class="panel-menu__list">
+                    <a href="#" class="panel-menu__link">
+                        <img src="./images/custom/Work.svg" alt="Work">
+                        <p>Инвестиции</p>
+                    </a>
+                </li>
+                <li class="panel-menu__list">
+                    <a href="#" class="panel-menu__link panel-settings">
+                        <img src="./images/custom/Setting.svg" alt="Setting">
+                        <p>Настройки</p>
+                        <img class="panel-menu__arrow" src="./images/custom/Arrow - Down 2.png" alt="Arrow - Down">
+                    </a>
+                    <ul class="panel-settings__menu">
+                        <li class="panel-settings__list">
+                            <a href="#" class="panel-settings__link">
+                                <img class="panel-settings__img" src="./images/custom/Arrow - Right Circle.png"
+                                    alt="Right Circle">
+                                Цены binance.com
+                            </a>
+                        </li>
+                        <li class="panel-settings__list">
+                            <a href="#" class="panel-settings__link">
+                                <img class="panel-settings__img" src="./images/custom/Arrow - Right Circle.png"
+                                    alt="Right Circle">
+                                Баланс
+                            </a>
+                        </li>
+                        <li class="panel-settings__list">
+                            <a href="#" class="panel-settings__link">
+                                <img class="panel-settings__img" src="./images/custom/Arrow - Right Circle.png"
+                                    alt="Right Circle">
+                                Параметры
+                            </a>
+                        </li>
+                        <li class="panel-settings__list">
+                            <a href="#" class="panel-settings__link panel-invest">
+                                <img class="panel-settings__img" src="./images/custom/Arrow - Right Circle.png"
+                                    alt="Right Circle">
+                                Инвестиции
+                            </a>
+                            <ul class="panel-invest__menu">
+                                <li class="panel-invest__list">
+                                    <a href="#" class="panel-invest__link">
+                                        <img class="panel-invest__img" src="./images/custom/Arrow - Right 3.png" alt="">
+                                        Сроки
+                                    </a>
+                                </li>
+                                <li class="panel-invest__list">
+                                    <a href="#" class="panel-invest__link">
+                                        <img class="panel-invest__img" src="./images/custom/Arrow - Right 3.png" alt="">
+                                        Лог
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="panel-menu__list panel-noti">
+                    <a class="panel-menu__link panel-noti__btn" href="#">
+                        <img src="./images/custom/Message.png" alt="Message">
+                        <p>Уведомления</p>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="personal">
+            <div class="portfolio-wrapper">
+                <h2 class="admin__h2">Новости</h2>
+                <div class="portfolio-wrapper__top">
+                    <button class="crypto-btn btn-green"><img src="./images/custom/+.png" alt=""></button>
+                </div>
+            </div>
+            <div class="portfolio-wrapper__top">
+                <select class="portfolio__input" type="text" name="">
+                    <option>25</option>
+                    <option>25</option>
+                    <option>25</option>
+                </select>
+                <p>Показаны записи 1-7 из 7</p>
+            </div>
+            <div class="scroll__right">
+                <table class="currency currency_a recall-btn">
+                    <tbody>
+                        <tr class="heading-row">
+                            <th class="tb-heading">№</th>
+                            <th class="tb-heading">Название</th>
+                            <th class="tb-heading">Время</th>
+                            <th class="tb-heading">Статус</th>
+                        </tr>
+                        <tr class="history-row even">
+                            <td class="history-row-info">
+                            </td>
+                            <td class="history-row-info">
+                                <input class="portfolio__input" type="text" name="">
+                            </td>
+                            <td class="history-row-info">
+                                <input class="portfolio__input" type="text" name="">
+                            </td>
+                            <td class="history-row-info" style="width: 250px;">
+                                <select class="portfolio__input portfolio__select" type="text" name="" style="width: 250px;">
+                                    <option>option 1</option>
+                                    <option>option 2</option>
+                                    <option>option 3</option>
+                                </select>
+                            </td>
+                            <td class="history-row-info"></td>
+                        </tr>
+                        <tr class="history-row even">
+                            <td class="history-row-info">
+                                <div class="money-type">
+                                    <span>1</span>
+                                </div>
+                            </td>
+                            <td class="history-row-info">
+
+                                <span class="time-text">Пример</span>
+                            </td>
+                            <td class="history-row-info">
+                                <span class="time-text">2021-02-02    |     01:12:07</span>
+                            </td>
+                            <td class="history-row-info">
+                                <button class="general-button table-btn btn-green">Активно</button>
+                            </td>
+                            <td class="history-row-info">
+                                <img src="images/Admin/replace.svg" alt="">
+                                <img src="images/Admin/Delete.svg" alt="">
+                            </td>
+                        </tr>
+                        <tr class="history-row even">
+                            <td class="history-row-info">
+                                <div class="money-type">
+                                    <span>1</span>
+                                </div>
+                            </td>
+                            <td class="history-row-info">
+                                <span class="time-text">Акции всякие разные</span>
+                            </td>
+                            <td class="history-row-info">
+                                <span class="time-text">2021-02-02    |     01:12:07</span>
+                            </td>
+                            <td class="history-row-info">
+                                <button class="general-button table-btn btn-orange">Ожидает</button>
+                            </td>
+                            <td class="history-row-info">
+                                <img src="images/Admin/replace.svg" alt="">
+                                <img src="images/Admin/Delete.svg" alt="">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container-fluid">
+                <div class="footer__container">
+                    <a href="#" class="footer-left">
+                        © SpaceInvest 2021 Все права защищены
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="./js/jquery.js"></script>
+    <script src="./js/apexcharts.js"></script>
+    <script src="./js/chart.js"></script>
+    <script src="./js/slick.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
