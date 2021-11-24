@@ -407,7 +407,7 @@ ul {
 }
 
 body {
-    background: #0e0b52
+    background: #161079;
 }
 
 .header {
@@ -3726,7 +3726,7 @@ body {
 }
 
 .header {
-    width: calc(100% - 200px);
+    width: calc(100% - 230px);
     right: 0;
     left: unset;
     transition: all 0.4s;
@@ -3737,7 +3737,7 @@ body {
 }
 
 .header.header-active {
-    width: calc(100% - 70px);
+    width: calc(100% - 100px);
 }
 
 .header.header-active .header-filter__btn {
@@ -3756,6 +3756,7 @@ body {
     width: 100%;
     top: 0;
     transition: all 0.4s;
+    
 
     &.panel-mobile {
         .admin__img {
@@ -3859,7 +3860,7 @@ body {
     margin-left: auto;
     transition: all 0.4s;
     overflow: hidden;
-}
+}   
 
 .personal.personal-active {
     width: calc(100% - 70px);
@@ -4076,12 +4077,12 @@ body {
 }
 
 .tarif-choosen-item-wrap {
-    max-width: 282px;
-    margin: 0 10px;
-
+    max-width: 282px !important;
+    width: 100% !important;
 }
 
 .tarif-choose-track {
+    padding-right: 38px;
     @include _1199-block {
         display: none;
     }
@@ -4119,6 +4120,11 @@ body {
     .slick-slide {
         margin-left: 10px;
         margin-right: 10px;
+        @include _575-block{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     }
 
     .slick-dots {
@@ -4245,7 +4251,20 @@ body {
 .mobile-hidden {
     @include _767(display, none);
 }
-
+.panel-bg{
+    @include _767-block{
+        display: none;
+    }
+}
+.panel{
+    @include _767-block{
+        background: url('../images/Header/header-bg.svg') #0b1d43 !important;
+        background-size: cover;
+        background-position-y: 100%;
+        background-repeat: no-repeat;
+        z-index: 5555;
+    }
+}
 .panel-open {
     max-width: 100% !important;
     width: 100% !important;
@@ -4468,7 +4487,7 @@ body {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding-right: 50px;
+        padding-right: 35px;
         margin-bottom: 30px;
         @include _767-block{
             flex-direction: column;
@@ -4482,6 +4501,11 @@ body {
         &__top{
             display: flex;
             align-items: center;
+            &:first-child{
+                @include _767-block{
+                    margin-bottom: 10px;
+                }
+            }
             select{
                 width: 92px;
                 margin-right: 22px;
@@ -4494,6 +4518,9 @@ body {
                 background-position-x: 86%;
                 text-align: left;
                 padding: 0 25px;
+                @include _767-block{
+                    margin-right: 5px;
+                }
                 option{
                     color: #000;
                 }
@@ -4501,6 +4528,9 @@ body {
             p{
                 font-size: 12px;
                 color: #393939;
+                @include _575-block{
+                    width: 100px;
+                }
             }
         }
     }
@@ -4601,6 +4631,9 @@ body {
         max-width: 353px;
         width: 100%;
         justify-content: space-between;
+        @include _575-block{
+            justify-content: center;
+        }
     }
     &-btn{
         max-width: 146px;
@@ -4612,6 +4645,7 @@ body {
         border-radius: 40px;
         font-size: 15px;
         font-weight: 700;
+        
         &__white {
             margin-right: 15px;
         }
@@ -4619,6 +4653,9 @@ body {
             max-width: 180px;
             background: #5252DD;
             color: #fff;
+            @include _575-block{
+                max-width: 155px;
+            }
         }
     }
 
@@ -4752,5 +4789,141 @@ body {
     &-btn2{
         max-width: 292px;
         width: 100%;
+    }
+}
+.buttons{
+  @include _767-block{
+      margin-left: 40px;
+  }  
+  @include _575-block{
+      margin-left: -15px;
+  }
+}
+.dashboard_title{
+    .admin__h2_1{
+        @include _575-block{
+            margin-right: 35px;
+        }
+    }
+}
+.admin__input{
+    @include _575-block{
+        margin-right: 20px;
+    }
+}
+.title-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 40px;
+    margin-bottom: 34px;
+    @include _575-block{
+        flex-direction: column;
+        align-items: center;
+    }
+    .admin__h2{
+        margin-bottom: 0;
+        @include _575-block{
+            margin-bottom: 10px;
+        }
+    }
+    .breadcrumbs{
+        display: flex;
+        align-items: center;
+        a{
+            display: inline-block;
+            color: #393939;
+            font-size: 12px;
+            font-weight: 400;
+        }
+        span{
+            color: #393939;
+            font-size: 12px;
+            font-weight: 400;
+            margin: 0 5px;
+        }
+    }
+}
+.button__right{
+    @include _767-block{
+        justify-content: center;
+    }
+}
+.scroll-tab{
+    display: none;
+    &.scroll-active{
+        display: block;
+    }
+}
+.btn-dark-orange{
+    background-color: #ED6C0C;
+}
+@include _767-block{
+    .crypto_green_btn{
+        position: absolute;
+        top: 105px;
+        right: 20px;
+    }
+}
+.port-wr{
+    @include _767-block{
+        flex-direction: unset;
+    }
+    .portfolio-wrapper__top{
+        margin-bottom: 0 !important;
+    }
+}
+
+.balance-btn2{
+    @include _575-block{
+        max-width: 190px;
+        margin-right: 20px;
+    }
+}
+
+.admin__select{
+    margin-top: 9px;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    color: black;
+    font-weight: 700;
+    outline: none !important;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    border: 1px solid rgba(11, 30, 69, 0.2);
+    border-radius: 46px;
+    padding: 18px 0px;
+    padding-left: 3%;
+    width: 97%;
+    option{
+        color: black;
+    }
+}
+.personal{
+    padding-bottom: 50px;
+}
+.balance-btn3{
+    background: #FF6243;
+    border: 1px solid #FF6243;
+}
+.table-btns{
+    display: flex;
+    align-items: center;
+    .table-btn{
+        width: 152px;
+        margin-right: 5px !important;
+    }
+    .btn-email{
+        width: 56px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 34px;
+        border-radius: 17px;
+        border: none;
+        background: linear-gradient(to bottom, #802890 0%, #0F0B52 100%);
+        
     }
 }

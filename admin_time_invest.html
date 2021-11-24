@@ -246,8 +246,8 @@
         </div>
 
         <div class="personal">
-            <div class="portfolio-wrapper">
-                <h2 class="admin__h2">Цены binance.com</h2>
+            <h2 class="admin__h2 balance-title">Сроки инвестиций</h2>
+            <div class="portfolio-wrapper port-wr">
                 <div class="portfolio-wrapper__top">
                     <select class="portfolio__input" type="text" name="">
                         <option>25</option>
@@ -256,15 +256,21 @@
                     </select>
                     <p>Показаны записи 1-7 из 7</p>
                 </div>
+                <div class="portfolio-wrapper__top">
+                    <button class="crypto-btn btn-green"><img src="./images/custom/+.png" alt=""></button>
+                </div>
             </div>
-            <div class="scroll__right binance-table">
-                <table class="currency currency_a">
+            
+            <div class="scroll__right scroll-tab scroll-active" id="graph1">
+                <table class="currency currency_a recall-btn">
                     <tbody>
                         <tr class="heading-row">
                             <th class="tb-heading">№</th>
-                            <th class="tb-heading">Валютная пара</th>
-                            <th class="tb-heading">Цена</th>
-                            <th class="tb-heading">Время обновления</th>
+                            <th class="tb-heading">Название</th>
+                            <th class="tb-heading">Процент</th>
+                            <th class="tb-heading">Срок</th>
+                            <th class="tb-heading">Статус</th>
+                            <th class="tb-heading"></th>
                         </tr>
                         <tr class="history-row even">
                             <td class="history-row-info">
@@ -278,6 +284,10 @@
                             <td class="history-row-info">
                                 <input class="portfolio__input" type="text" name="">
                             </td>
+                            <td class="history-row-info">
+                                <input class="portfolio__input" type="text" name="">
+                            </td>
+                            <td class="history-row-info"></td>
                         </tr>
                         <tr class="history-row even">
                             <td class="history-row-info">
@@ -286,61 +296,43 @@
                                 </div>
                             </td>
                             <td class="history-row-info">
-                                <span class="sum"><img src="./images/custom/bit-icon1.png" alt="">BTC</span>
+                                <span class="time-text">Краткосрок</span>
                             </td>
                             <td class="history-row-info">
-                                <span class="time-text">0.06306000</span>
+                                <span class="time-text">25</span>
                             </td>
                             <td class="history-row-info">
-                                <span class="sum portfel">2021-07-24   |    02:30:05</span>
-                            </td>
-                        </tr>
-                        <tr class="history-row even">
-                            <td class="history-row-info">
-                                <div class="money-type">
-                                    <span>1</span>
-                                </div>
+                                <span class="time-text">120</span>
                             </td>
                             <td class="history-row-info">
-                                <span class="sum"><img src="./images/custom/bit-icon2.png" alt="">USDT</span>
+                                <span class="time-text">Активен</span>
                             </td>
                             <td class="history-row-info">
-                                <span class="time-text">0.06306000</span>
-                            </td>
-                            <td class="history-row-info">
-                                <span class="sum portfel">2021-02-02 | 03:59:31</span>
+                                <img src="images/Admin/replace.svg" alt="">
+                                <img src="images/Admin/Delete.svg" alt="">
                             </td>
                         </tr>
                         <tr class="history-row even">
                             <td class="history-row-info">
                                 <div class="money-type">
-                                    <span>1</span>
+                                    <span>2</span>
                                 </div>
                             </td>
                             <td class="history-row-info">
-                                <span class="sum"><img src="./images/custom/bit-icon1.png" alt="">BTC</span>
+                                <span class="time-text">Среднесрок</span>
                             </td>
                             <td class="history-row-info">
-                                <span class="time-text">0.06306000</span>
+                                <span class="time-text">30</span>
                             </td>
                             <td class="history-row-info">
-                                <span class="sum portfel">2021-07-24   |    02:30:05</span>
-                            </td>
-                        </tr>
-                        <tr class="history-row even">
-                            <td class="history-row-info">
-                                <div class="money-type">
-                                    <span>1</span>
-                                </div>
+                                <span class="time-text">249</span>
                             </td>
                             <td class="history-row-info">
-                                <span class="sum"><img src="./images/custom/bit-icon2.png" alt="">USDT</span>
+                                <span class="time-text">Активен</span>
                             </td>
                             <td class="history-row-info">
-                                <span class="time-text">0.06306000</span>
-                            </td>
-                            <td class="history-row-info">
-                                <span class="sum portfel">2021-02-02 | 03:59:31</span>
+                                <img src="images/Admin/replace.svg" alt="">
+                                <img src="images/Admin/Delete.svg" alt="">
                             </td>
                         </tr>
                         <tr class="history-row even">
@@ -350,77 +342,140 @@
                                 </div>
                             </td>
                             <td class="history-row-info">
-                                <span class="sum"><img src="./images/custom/bit-icon1.png" alt="">BTC</span>
+                                <span class="time-text">Долгосрок</span>
                             </td>
                             <td class="history-row-info">
-                                <span class="time-text">0.06306000</span>
+                                <span class="time-text">40</span>
                             </td>
                             <td class="history-row-info">
-                                <span class="sum portfel">2021-07-24   |    02:30:05</span>
-                            </td>
-                        </tr>
-                        <tr class="history-row even">
-                            <td class="history-row-info">
-                                <div class="money-type">
-                                    <span>1</span>
-                                </div>
+                                <span class="time-text">360</span>
                             </td>
                             <td class="history-row-info">
-                                <span class="sum"><img src="./images/custom/bit-icon2.png" alt="">USDT</span>
+                                <span class="time-text">Активен</span>
                             </td>
                             <td class="history-row-info">
-                                <span class="time-text">0.06306000</span>
-                            </td>
-                            <td class="history-row-info">
-                                <span class="sum portfel">2021-02-02 | 03:59:31</span>
-                            </td>
-                        </tr>
-                        <tr class="history-row even">
-                            <td class="history-row-info">
-                                <div class="money-type">
-                                    <span>1</span>
-                                </div>
-                            </td>
-                            <td class="history-row-info">
-                                <span class="sum"><img src="./images/custom/bit-icon1.png" alt="">BTC</span>
-                            </td>
-                            <td class="history-row-info">
-                                <span class="time-text">0.06306000</span>
-                            </td>
-                            <td class="history-row-info">
-                                <span class="sum portfel">2021-07-24   |    02:30:05</span>
-                            </td>
-                        </tr>
-                        <tr class="history-row even">
-                            <td class="history-row-info">
-                                <div class="money-type">
-                                    <span>1</span>
-                                </div>
-                            </td>
-                            <td class="history-row-info">
-                                <span class="sum"><img src="./images/custom/bit-icon2.png" alt="">USDT</span>
-                            </td>
-                            <td class="history-row-info">
-                                <span class="time-text">0.06306000</span>
-                            </td>
-                            <td class="history-row-info">
-                                <span class="sum portfel">2021-02-02 | 03:59:31</span>
+                                <img src="images/Admin/replace.svg" alt="">
+                                <img src="images/Admin/Delete.svg" alt="">
                             </td>
                         </tr>
                     </tbody>
                 </table>
             </div>
-            <div class="binance-pagination">
-                <a href="#" class="binance-btn binance-prev"><img src="./images/custom/pagination-prev.png" alt=""></a>
-                <a href="#" class="binance-btn binance-active">1</a>
-                <a href="#" class="binance-btn">2</a>
-                <a href="#" class="binance-btn">3</a>
-                <a href="#" class="binance-btn">4</a>
-                <a href="#" class="binance-btn">5</a>
-                <a href="#" class="binance-btn">6</a>
-                <a href="#" class="binance-btn">7</a>
-                <a href="#" class="binance-btn">8</a>
-                <a href="#" class="binance-btn binance-next"><img src="./images/custom/pagination-next.png" alt=""></a>
+            <div class="scroll__right scroll-tab" id="graph2">
+                <table class="currency currency_a recall-btn">
+                    <thead>
+                        <tr class="heading-row">
+                            <th class="tb-heading">№</th>
+                            <th class="tb-heading">Валюта</th>
+                            <th class="tb-heading">Баланс</th>
+                            <th class="tb-heading">USDT</th>
+                            <th class="tb-heading">Добавленно</th>
+                            <th class="tb-heading">Обновленно</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="history-row even">
+                            <td class="history-row-info">
+                            </td>
+                            <td class="history-row-info">
+                                <input class="portfolio__input" type="text" name="">
+                            </td>
+                            <td class="history-row-info">
+                                <input class="portfolio__input" type="text" name="">
+                            </td>
+                            <td class="history-row-info">
+                                <input class="portfolio__input" type="text" name="">
+                            </td>
+                            <td class="history-row-info">
+                                <input class="portfolio__input" type="text" name="">
+                            </td>
+                            <td class="history-row-info">
+                                <input class="portfolio__input" type="text" name="">
+                            </td>
+
+                            <td class="history-row-info"></td>
+                        </tr>
+                        
+                        <tr class="history-row even">
+                            <td class="history-row-info">
+                                <div class="money-type">
+                                    <span>2</span>
+                                </div>
+                            </td>
+                            <td class="history-row-info">
+                                <span class="sum"><img src="./images/custom/bit-icon2.png" alt="">USDT</span>
+                            </td>
+                            <td class="history-row-info">
+                                <span class="time-text">6000.00000</span>
+                            </td>
+                            <td class="history-row-info">
+                                <span class="time-text">6000.00000</span>
+                            </td>
+                            <td class="history-row-info">
+                                <span class="time-text">2021-07-24   |    02:30:05</span>
+                            </td>
+                            <td class="history-row-info">
+                                <span class="time-text">2021-07-24   |    02:30:05</span>
+                            </td>
+                            <td class="history-row-info">
+                                <img src="images/Admin/replace.svg" alt="">
+                                <img src="images/Admin/Delete.svg" alt="">
+                            </td>
+                        </tr>
+                        <tr class="history-row even">
+                            <td class="history-row-info">
+                                <div class="money-type">
+                                    <span>2</span>
+                                </div>
+                            </td>
+                            <td class="history-row-info">
+                                <span class="sum"><img src="./images/custom/bit-icon1.png" alt="">BTC</span>
+                            </td>
+                            <td class="history-row-info">
+                                <span class="time-text">24.10000000</span>
+                            </td>
+                            <td class="history-row-info">
+                                <span class="time-text">61230.0000</span>
+                            </td>
+                            <td class="history-row-info">
+                                <span class="time-text">2021-07-24   |    02:30:05</span>
+                            </td>
+                            <td class="history-row-info">
+                                <span class="time-text">2021-07-24   |    02:30:05</span>
+                            </td>
+                            <td class="history-row-info">
+                                <img src="images/Admin/replace.svg" alt="">
+                                <img src="images/Admin/Delete.svg" alt="">
+                            </td>
+                        </tr>
+                        <tr class="history-row even">
+                            <td class="history-row-info">
+                                <div class="money-type">
+                                    <span>2</span>
+                                </div>
+                            </td>
+                            <td class="history-row-info">
+                                <span class="sum"><img src="./images/custom/bit-icon1.png" alt="">BTC</span>
+                            </td>
+                            <td class="history-row-info">
+                                <span class="time-text">24.10000000</span>
+                            </td>
+                            <td class="history-row-info">
+                                <span class="time-text">61230.0000</span>
+                            </td>
+                            <td class="history-row-info">
+                                <span class="time-text">2021-07-24   |    02:30:05</span>
+                            </td>
+                            <td class="history-row-info">
+                                <span class="time-text">2021-07-24   |    02:30:05</span>
+                            </td>
+                            <td class="history-row-info">
+                                <img src="images/Admin/replace.svg" alt="">
+                                <img src="images/Admin/Delete.svg" alt="">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
 

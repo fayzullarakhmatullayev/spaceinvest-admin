@@ -246,127 +246,40 @@
 		</div>
 
 		<div class="personal">
-			<div class="scroll-content">
-				<div class="tarif-choose-1-outer tarif-choose-1-outer1">
-					<div class="tarif-choose-track">
-						<label class="tarif-choosen-item-wrap tarif__2">
-							<input type="radio" name="tarif">
-							<div class="tarif-choosen-item tarif__in">
-								<div class="tarif-choosen-item-img">
-									<img src="./images/Admin/portfolio.svg" alt="#">
-								</div>
-								<div class="tarif-choosen-text">
-									<strong>7</strong>
-									<span>Портфель клиентов</span>
-								</div>
-							</div>
-						</label>
-						<label class="tarif-choosen-item-wrap tarif__2">
-							<input type="radio" name="tarif">
-							<div class="tarif-choosen-item tarif__in">
-								<div class="tarif-choosen-item-img">
-									<img src="./images/Admin/cryptocurrency.svg" alt="#">
-								</div>
-								<div class="tarif-choosen-text">
-									<strong>2</strong>
-									<span>Активных <br> криптовалют</span>
-								</div>
-							</div>
-						</label>
-						<label class="tarif-choosen-item-wrap tarif__2">
-							<input type="radio" name="tarif">
-							<div class="tarif-choosen-item tarif__in">
-								<div class="tarif-choosen-item-img">
-									<img src="./images/Admin/team.svg" alt="#">
-								</div>
-								<div class="tarif-choosen-text">
-									<strong>24</strong>
-									<span>Регистрации <br> пользователей</span>
-								</div>
-							</div>
-						</label>
-						<label class="tarif-choosen-item-wrap tarif__2">
-							<input type="radio" name="tarif">
-							<div class="tarif-choosen-item tarif__in">
-								<div class="tarif-choosen-item-img">
-									<img src="./images/Admin/pie-chart.svg" alt="#">
-								</div>
-								<div class="tarif-choosen-text">
-									<span class="tarif-num"><strong>8424.7621376</strong></span>
-									<span>Всего вывели (USDT)</span>
-								</div>
-							</div>
-						</label>
-					</div>
-					<div class="tarif-slider">
-						<label class="tarif-choosen-item-wrap tarif__2">
-							<input type="radio" name="tarif">
-							<div class="tarif-choosen-item tarif__in">
-								<div class="tarif-choosen-item-img">
-									<img src="./images/Admin/portfolio.svg" alt="#">
-								</div>
-								<div class="tarif-choosen-text">
-									<strong>7</strong>
-									<span>Портфель клиентов</span>
-								</div>
-							</div>
-						</label>
-						<label class="tarif-choosen-item-wrap tarif__2">
-							<input type="radio" name="tarif">
-							<div class="tarif-choosen-item tarif__in">
-								<div class="tarif-choosen-item-img">
-									<img src="./images/Admin/cryptocurrency.svg" alt="#">
-								</div>
-								<div class="tarif-choosen-text">
-									<strong>2</strong>
-									<span>Активных <br> криптовалют</span>
-								</div>
-							</div>
-						</label>
-						<label class="tarif-choosen-item-wrap tarif__2">
-							<input type="radio" name="tarif">
-							<div class="tarif-choosen-item tarif__in">
-								<div class="tarif-choosen-item-img">
-									<img src="./images/Admin/team.svg" alt="#">
-								</div>
-								<div class="tarif-choosen-text">
-									<strong>24</strong>
-									<span>Регистрации <br> пользователей</span>
-								</div>
-							</div>
-						</label>
-						<label class="tarif-choosen-item-wrap tarif__2">
-							<input type="radio" name="tarif">
-							<div class="tarif-choosen-item tarif__in">
-								<div class="tarif-choosen-item-img">
-									<img src="./images/Admin/pie-chart.svg" alt="#">
-								</div>
-								<div class="tarif-choosen-text">
-									<span class="tarif-num"><strong>8424.7621376</strong></span>
-									<span>Всего вывели (USDT)</span>
-								</div>
-							</div>
-						</label>
-					</div>
+      <div class="title-wrapper">
+				<h2 class="admin__h2">Редактировать: Краткосрок</h2>
+				<div class="breadcrumbs">
+					<a href="#">Главная</a>
+					<span>-></span>
+					<a href="#">Срок инвестиций</a>
+					<span>-></span>
+					<a href="#">Краткосрок</a>     
 				</div>
 			</div>
-			<div class="dashboard_title">
-				<h2 class="admin__h2 admin__h2_1">USDT</h2>
-				<div class="buttons">
-					<button class="blue__button" type="">Подробно</button>
-					<button class="blue__button last_btn" type="">Редактировать</button>
-				</div>
+			<div class="admin__input">
+				<p class="input__text">Название *</p>
+				<input type="text" name="">
 			</div>
-			<div class="row row__graph">
-				<div class="col-12 col-lg-6 pr">
-					<div id="chart1"></div>
-				</div>
-				<div class="col-12 col-lg-6 pl">
-					<div id="customChart2"></div>
-				</div>
-				<div class="col-12 mt">
-					<div id="customChart3"></div>
-				</div>
+			<div class="admin__input">
+				<p class="input__text">Процент *</p>
+				<input type="text" name="">
+			</div>
+			<div class="admin__input">
+				<p class="input__text">Срок</p>
+				<input  type="text" name="">
+			</div>
+			<div class="admin__input admin__input_1">
+				<p class="input__text">Статус</p>
+				<select type="text" name="" class="admin__select">
+          <option value="">Модерация</option>
+          <option value="">Модерация</option>
+          <option value="">Модерация</option>
+        </select>
+			</div>
+			<div class="button__right">
+				<button class="green__button" type=""><img src="images/Admin/Tick Square.svg" alt="">
+					<p>Сохранить</p>
+				</button>
 			</div>
 		</div>
 
@@ -383,8 +296,6 @@
 
 	<script src="./js/jquery.js"></script>
 	<script src="./js/slick.js"></script>
-	<script src="./js/apexcharts.js"></script>
-	<script src="./js/chart.js"></script>
 	<script src="./js/script.js"></script>
 </body>
 

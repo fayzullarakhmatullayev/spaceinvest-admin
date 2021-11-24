@@ -5563,7 +5563,7 @@ h6 {
     height: 85px;
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 0 33px 0 12px;
+    padding-right: 33px;
 }
 
 .header__container {
@@ -5697,13 +5697,16 @@ h6 {
 
 /* Panel */
 .panel {
-    background: url('../images/Header/header-bg.svg') !important;
-    background-size: cover;
-    background-position-y: 100%;
-    background-repeat: no-repeat;
     position: absolute;
     left: 0;
     height: 100%;
+}
+
+.panel-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
 
 .panel__container {

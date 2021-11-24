@@ -92,7 +92,17 @@ $(document).ready(function () {
 
         var href = $(this).attr('href');
         $(href).addClass('graph__active2');
-
+    })
+    
+    $('.balance-top a').click(function(e){
+        e.preventDefault()
+        $('.balance-top a').removeClass('balance-top__active')
+        $(this).addClass('balance-top__active')
+        
+        const href = $(this).attr('href')
+        $('.scroll-tab').removeClass('scroll-active')
+        $(href).addClass('scroll-active')
+        
     })
 });
 

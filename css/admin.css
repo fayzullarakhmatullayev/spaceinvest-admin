@@ -350,7 +350,8 @@
     border-radius: 42px;
     transition: 0.4s;
     outline: none !important;
-    border: none;
+    border: 1px solid  #5252DD;
+    
 }
 .blue__button:hover
 {
